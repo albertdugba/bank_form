@@ -1,0 +1,563 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+.container {
+  width: 100vw;
+  max-width: 1150px;
+  margin: 10px auto;
+}
+
+button {
+  display: block;
+  outline: none;
+  border: none;
+  width: 100%;
+  height: 30px;
+  color: #fff;
+  background-color: #003e67;
+  padding: 6px 12px;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.mt-1 {
+  margin-top: 1rem;
+}
+
+.mt-1 span {
+  margin-left: 0.4rem;
+}
+
+input {
+  width: 100%;
+  height: 30px;
+  display: block;
+  border: none;
+  outline: none;
+  border: 2px solid #003e67;
+  box-sizing: border-box;
+}
+
+.input--box {
+  width: 100%;
+  max-width: 30px;
+  height: 30px;
+  border: none;
+  outline: none;
+  border: 2px solid #003e67;
+}
+
+.flex--container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.flex--column {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.flex--column input {
+  margin-top: 0.6rem;
+  border: 2px solid #003e67;
+}
+
+.flex--center {
+  display: flex;
+  align-items: center;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.flex--between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.flex--column {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.flex--colum-no-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.flex--colum-no-center span {
+  margin-top: 1rem;
+}
+
+.flex--evenly {
+  display: grid;
+  grid-template-columns: 3fr 2fr 2fr 2fr;
+  grid-gap: 10px;
+}
+
+.flex--around {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.grid--inner {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.gap {
+  margin-left: 1rem;
+}
+
+.pd-1 {
+  padding-left: 10px;
+}
+
+.pd-2 {
+  padding-left: 1rem;
+}
+
+.pd {
+  padding-bottom: 0.8rem;
+}
+
+.mr-1 {
+  margin-right: 0.8rem;
+}
+
+.mb-1 {
+  margin-bottom: 1rem;
+}
+
+.mb-3 {
+  margin-top: -0.4rem;
+}
+
+.ml-1 {
+  margin-left: 0.8rem;
+}
+
+.mt-2 {
+  margin-top: 1.2rem;
+}
+
+.input--label {
+  width: 10rem;
+}
+
+.w100 {
+  width: 100%;
+}
+
+.w40 {
+  width: 40%;
+}
+
+.bg--primary {
+  background-color: #e0f2fe;
+  padding: 0.5rem;
+}
+
+.right-2 {
+  margin-top: -4rem;
+}
+
+.right-1 {
+  margin-top: -1rem;
+}
+
+.right-3 {
+  margin-top: -1.8rem;
+}
+
+.spacer {
+  padding: 0.5rem;
+}
+
+.grid--container-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+}
+
+.grid--container-2 {
+  display: grid;
+  grid-template-columns: 2fr 5fr;
+  grid-gap: 10px;
+}
+
+.flex--gow {
+  flex-grow: 4;
+}
+
+.application__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.application__container span {
+  margin-bottom: 1.3rem;
+  display: flex;
+  align-items: center;
+}
+
+.bank__details {
+  display: grid;
+  grid-template-columns: 9fr 2fr;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  color: #003e67;
+  font-size: 100%;
+}
+
+.photograph {
+  display: flex;
+  justify-content: space-between;
+  height: 40vh;
+  width: 230px;
+  background: #e0f2fe;
+}
+
+.account__section {
+  padding: 0.4rem;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.account__information {
+  display: flex;
+}
+
+.account__information input {
+  width: 100%;
+  max-width: 30px;
+  height: 30px;
+  border: none;
+  outline: none;
+  border: 2px solid #003e67;
+}
+
+.title {
+  color: #fff;
+  background-color: #003e67;
+  padding: 0.4rem;
+  width: 100%;
+  margin-top: -9px;
+}
+
+.label {
+  text-transform: uppercase;
+  color: #003e67;
+}
+
+.title--label {
+  text-transform: uppercase;
+}
+
+.category__container {
+  background: #e0f2fe;
+}
+
+.category {
+  padding: 0.5rem;
+}
+
+.category .category__group {
+  display: flex;
+  flex-direction: column;
+}
+
+.category .category__group--item {
+  display: flex;
+  align-items: center;
+  margin-top: 8px;
+}
+
+.category .category__group--item span,
+.category .category__group--item .label {
+  margin-left: 5px;
+}
+
+.category .category__group--item input {
+  width: 30px;
+  height: 30px;
+  border: 2px solid #003e67;
+}
+
+.client {
+  background-color: #e0f2fe;
+  padding: 0.5rem;
+}
+
+.client__lists .client__item {
+  margin-top: 0.8rem;
+}
+
+.client .client__right {
+  width: 100%;
+}
+
+.client .client__right .client__inner--container {
+  display: flex;
+}
+
+.client .client__right .client__scale {
+  display: flex;
+  align-items: center;
+}
+
+.client .client__right .client__scale .client__checkbox {
+  display: flex;
+  align-items: center;
+  margin-top: 0.5rem;
+}
+
+.client .client__right .client__scale .client__checkbox label {
+  margin-left: 0.35rem;
+  margin-right: 0.35rem;
+}
+
+.client .client__right .client--wrapper {
+  display: flex;
+}
+
+.client .client__right .client--wrapper .client__checkbox--label {
+  display: flex;
+  align-items: center;
+}
+
+.client .client__right .client--wrapper .client__checkbox--label label {
+  margin-right: 1rem;
+}
+
+.client .client__right .client__inner--container {
+  display: flex;
+  align-items: center;
+}
+
+.applicant--wrapper {
+  background-color: #e0f2fe;
+  padding: 0.5rem;
+}
+
+.first__applicant {
+  display: flex;
+  align-items: center;
+}
+
+.first__applicant--inner {
+  display: flex;
+  flex-direction: column;
+}
+
+.first__applicant--inner span {
+  margin-top: 1.6rem;
+}
+
+.first__applicant--inner span:last-child {
+  margin-bottom: 1rem;
+}
+
+.first__applicant--right {
+  display: flex;
+  align-items: center;
+}
+
+.first__applicant--right .checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.first__applicant--right .checkbox label {
+  margin: 1rem;
+  color: #003e67;
+}
+
+.first__applicant--right .tin {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.first__applicant--right .tin__wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.dob {
+  display: flex;
+}
+
+.dob--container {
+  display: flex;
+  align-items: center;
+}
+
+.dob--container .maiden__name {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.surname {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.surname div input {
+  flex: 0.5;
+}
+
+.surname .flex--container {
+  flex: 0.5;
+}
+
+.marriage__status {
+  display: flex;
+}
+
+.marriage__status .status {
+  display: flex;
+  align-items: center;
+}
+
+.gender__checkbox {
+  display: flex;
+  align-items: center;
+}
+
+.gender {
+  display: flex;
+}
+
+.gender__spouse {
+  flex-grow: 0.9;
+  display: flex;
+  align-items: center;
+}
+
+.gender__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.spouse {
+  overflow-wrap: break-word;
+}
+
+.residential__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.residential__container .residential__status {
+  display: flex;
+  align-items: center;
+}
+
+.residential__container .residential__status label {
+  padding: 1rem;
+}
+
+.country__origin {
+  display: flex;
+  align-items: center;
+}
+
+.country__origin input {
+  width: 50%;
+}
+
+.country__origin .residence {
+  display: flex;
+  align-items: center;
+  width: 50%;
+}
+
+.note {
+  color: #003e67;
+}
+
+.box1 {
+  display: flex;
+  align-items: center;
+}
+
+.occupation {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.occupation .grid--inner {
+  display: grid;
+  grid-template-columns: 250px 250px;
+  grid-gap: 20px;
+}
+
+.nearest__landmark {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  grid-gap: 20px;
+}
+
+.nearest__landmark--label {
+  display: flex;
+  align-items: center;
+}
+
+.digital__address {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+
+.digital__address label {
+  overflow-wrap: break-word;
+}
+
+.city--right {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mobile__money--container {
+  display: flex;
+}
+
+.id {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.id label {
+  width: 100px;
+}
+/*# sourceMappingURL=app.css.map */

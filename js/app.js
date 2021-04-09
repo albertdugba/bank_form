@@ -1,0 +1,3 @@
+const printPage = () => {
+  window.print();
+};

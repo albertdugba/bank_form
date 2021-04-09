@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,cAAc,CAAC;EACb,OAAO,EAAE,IAAI;EACb,qBAAqB,EAAE,OAAO;CAC/B",
+    "sources": [
+        "../sass/bank__details.scss"
+    ],
+    "names": [],
+    "file": "bank__details.css"
+}
