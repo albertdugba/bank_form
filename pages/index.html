@@ -93,8 +93,8 @@
 
                         <label class="checkbox flex">
                             <input type="checkbox">
+                            <span class="ml-1 mt-1">OTHER (PLEASE SPECIFY)</span>
                             <div class="flex--between">
-                                <span class="ml-1 mt-1">OTHER (PLEASE SPECIFY)</span>
                                 <input type="text" class="ml-1">
                             </div>
                         </label>
@@ -127,35 +127,35 @@
                             <div class="valuebox">
                                 <div class="flex--between">
                                     <div class="flex--center">
-                                        <div class="flex--center">
-                                            <input class="input--box">
-                                            <span class="ml-1">Low</span>
-                                        </div>
-                                        <div class="flex--center ml-1">
-                                            <input class="input--box">
-                                            <span class="ml-1">Medium</span>
-                                        </div>
-                                        <div class="flex--center">
-                                            <input class="input--box ml-1">
+                                        <label class="checkbox flex">
+                                            <input type="checkbox">
+                                            <span>Low</span>
+                                        </label>
+                                        <label class="checkbox flex">
+                                            <input type="checkbox" id="medium" name="medium">
+                                            <span>Medium</span>
+                                        </label>
+                                        <label class="checkbox flex">
+                                            <input type="checkbox">
                                             <span class="ml-1">High</span>
-                                        </div>
+                                        </label>
                                     </div>
 
                                     <!-- Group 2 -->
                                     <div class="flex--center full-width">
                                         <span class="ml-2">Investment Horizon:</span>
-                                        <div class="flex--center">
-                                            <input class="input--box">
-                                            <span class="ml-1">Short Term Up to 1 yr</span>
-                                        </div>
-                                        <div class="flex--center ml-1">
-                                            <input class="input--box">
-                                            <span class="ml-1">Medium Term 1-3 yrs</span>
-                                        </div>
-                                        <div class="flex--center ml-1">
-                                            <input class="input--box">
+                                        <label class="checkbox flex">
+                                            <input type="checkbox" id="shortTerm" name="shortTerm">
+                                            <span>Short Term Up to 1 yr</span>
+                                        </label>
+                                        <label class="checkbox flex">
+                                            <input type="checkbox" id="mediumTerm" name="mediumTerm">
+                                            <span>Medium Term 1-3 yrs</span>
+                                        </label>
+                                        <label class="checkbox flex">
+                                            <input type="checkbox" id="longTerm" name="longTerm">
                                             <span class="ml-1">Long Term more than 3 yrs</span>
-                                        </div>
+                                            </l>
                                     </div>
                                 </div>
                             </div>
@@ -169,16 +169,18 @@
                             <div class="valuebox">
                                 <div class="flex--center">
                                     <div class="flex--center">
-                                        <input class="input--box">
-                                        <span class="ml-1">Low</span>
-                                    </div>
-                                    <div class="flex--center ml-1">
-                                        <input class="input--box">
-                                        <span class="ml-1">Medium</span>
-                                    </div>
-                                    <div class="flex--center ml-1">
-                                        <input class="input--box">
-                                        <span class="ml-1">High</span>
+                                        <label class="checkbox flex">
+                                            <input type="checkbox" id="low" name="low">
+                                            <span>Low</span>
+                                        </label>
+                                        <label class="checkbox flex">
+                                            <input type="checkbox" id="medium" name="medium">
+                                            <span>Medium</span>
+                                        </label>
+                                        <label class="checkbox flex">
+                                            <input type="checkbox" id="high" name="high">
+                                            <span class="ml-1">High</span>
+                                        </label>
                                     </div>
                                 </div>
                             </div>
@@ -204,26 +206,26 @@
                         <div class="valuebox">
                             <div class="flex--between">
                                 <div class="flex--center">
-                                    <div class="flex--center">
-                                        <input type="text" class="input--box">
-                                        <span class="ml-1">Mr.</span>
-                                    </div>
-                                    <div class="flex--center ml-1">
-                                        <input type="text" class="input--box">
-                                        <span class="ml-1">Mr.</span>
-                                    </div>
-                                    <div class="flex--center ml-1">
-                                        <input type="text" class="input--box">
-                                        <span class="ml-1">Mrs.</span>
-                                    </div>
-                                    <div class="flex--center ml-1">
-                                        <input type="text" class="input--box">
-                                        <span class="ml-1">Dr.</span>
-                                    </div>
-                                    <div class="flex--center ml-1">
-                                        <input type="text" class="input--box">
-                                        <span class="ml-1">Prof.</span>
-                                    </div>
+                                    <label class="checkbox">
+                                        <input type="checkbox" id="mr" name="mr">
+                                        <span>Mr.</span>
+                                    </label>
+                                    <label class="checkbox">
+                                        <input type="checkbox">
+                                        <span>Mr.</span>
+                                    </label>
+                                    <label class="checkbox">
+                                        <input type="checkbox" id="mrs" name="mrs">
+                                        <span>Mrs.</span>
+                                    </label>
+                                    <label class="checkbox">
+                                        <input type="checkbox" id="dr" name="dr">
+                                        <span>Dr.</span>
+                                    </label>
+                                    <label class="checkbox">
+                                        <input type="checkbox" id="prof" name="prof">
+                                        <span>Mr.</span>
+                                    </label>
                                 </div>
 
                                 <div class="flex--between">
@@ -293,27 +295,27 @@
 
                         <!-- Marital Status -->
                         <div class="flex--center">
-                            <div class="flex--center ml-1">
-                                <label for="maritalStatus" class="wd-2">Marital Status:</label>
-                                <input type="text" class="input--box ml-1" id="maritalStatus" name="maritalStatus"
+                            <label class="checkbox ml-1 flex--center">
+                                <label for="maritalStatus" class="wd-2 ml-1">Marital Status:</label>
+                                <input type="checkbox" class="input--box ml-1" id="maritalStatus" name="maritalStatus"
                                     required>
-                            </div>
-                            <div class="flex--center">
-                                <label for="maritalStatus" class="ml-1">Single</label>
-                                <input type="text" class="input--box ml-1" id="single" name="single" required>
-                            </div>
-                            <div class="flex--center">
-                                <label for="maritalStatus" class="ml-1">Married</label>
-                                <input type="text" class="input--box ml-1" id="married" name="married" required>
-                            </div>
-                            <div class="flex--center">
-                                <label for="maritalStatus" class="ml-1">Divorced</label>
-                                <input type="text" class="input--box ml-1" id="divorced" name="divorced" required>
-                            </div>
-                            <div class="flex--center">
-                                <label for="maritalStatus" class="ml-1">Widowed</label>
-                                <input type="text" class="input--box ml-1" id="widowed" name="widowed" required>
-                            </div>
+                            </label>
+                            <label for="maritalStatus" class="checkbox">
+                                <span>Single</span>
+                                <input type="checkbox" class="input--box ml-1" id="single" name="single" required>
+                            </label>
+                            <label for="maritalStatus" class="checkbox">
+                                <span>Married</span>
+                                <input type="checkbox" id="married" name="married" required>
+                            </label>
+                            <label class="checkbox">
+                                <span>Divorced</span>
+                                <input type="checkbox" class="input--box ml-1" id="divorced" name="divorced" required>
+                            </label>
+                            <label class="checkbox">
+                                <span>Widowed</span>
+                                <input type="checkbox" class="input--box ml-1" id="widowed" name="widowed" required>
+                            </label>
                         </div>
                     </div>
                     <!-- Gender -->
@@ -322,14 +324,15 @@
                         <div class="valuebox">
                             <div class="flex--between full-width">
                                 <div class="flex--center">
-                                    <div class="flex--center">
-                                        <label for="male">Male</label>
-                                        <input type="text" class="input--box ml-1" id="male" name="male" required>
-                                    </div>
-                                    <div class="flex--center ml-2">
-                                        <label for="female">Female</label>
-                                        <input type="text" class="input--box ml-1" id="female" name="female" required>
-                                    </div>
+
+                                    <label for="male" class="checkbox">
+                                        <span for="male">Male</span>
+                                        <input type="checkbox" id="male" name="male" required>
+                                    </label>
+                                    <label for="female" class="checkbox">
+                                        <span for="female">Female</span>
+                                        <input type="checkbox" id="female" name="female" required>
+                                    </label>
                                 </div>
 
                                 <div class="flex--center full-width pl-1">
@@ -356,25 +359,28 @@
                         <div class="labelbox">Residential Status:</div>
                         <div class="valuebox">
                             <div class="flex--between">
-                                <div class="flex--center">
-                                    <input type="text" class="input--box" id="residentGhanian" name="residentGhanian">
-                                    <label for="residentGhanian" class="ml-1">Resident Ghanian</label>
-                                </div>
-                                <div class="flex--center">
-                                    <input type="text" class="input--box" id="residentForeigner"
+                                <label for="residentGhanian" class="checkbox">
+                                    <input type="checkbox" class="input--box" id="residentGhanian"
+                                        name="residentGhanian">
+                                    <span>Resident Ghanian</span>
+                                </label>
+
+
+                                <label for="residentForeigner" class="checkbox">
+                                    <input type="checkbox" class="input--box" id="residentForeigner"
                                         name="residentForeigner">
-                                    <label for="residentForeigner" class="ml-1">Resident Foreigner</label>
-                                </div>
-                                <div class="flex--center">
-                                    <input type="text" class="input--box" id="nonResidentGhanian"
+                                    <span>Resident Foreigner</span>
+                                </label>
+                                <label for="nonResidentGhanian" class="checkbox">
+                                    <input type="checkbox" class="input--box" id="nonResidentGhanian"
                                         name="nonResidentGhanian">
-                                    <label for="nonResidentGhanian" class="ml-1">Non-Resident Ghanaian</label>
-                                </div>
-                                <div class="flex--center">
-                                    <input type="text" class="input--box" id="nonResidentForeigner"
+                                    <span>Non-Resident Ghanaian</span>
+                                </label>
+                                <label for="nonResidentForeigner" class="checkbox">
+                                    <input type="checkbox" class="input--box" id="nonResidentForeigner"
                                         name="nonResidentForeigner">
-                                    <label for="nonResidentForeigner" class="ml-1">Non-Resident Foreigner</label>
-                                </div>
+                                    <span>Non-Resident Foreigner</span>
+                                </label>
                             </div>
                         </div>
                     </div>
@@ -714,27 +720,26 @@
 
                         <div class="valuebox">
                             <div class="flex--between">
-                                <div class="flex--center">
-                                    <input type="text" class="input--box" id="employed" name="employed" required>
-                                    <label for="employed" class="ml-1">Employed</label>
-                                </div>
-                                <div class="flex--center ml-1">
-                                    <input type="text" class="input--box" id="selfEmployed" name="selfEmployed"
-                                        required>
-                                    <label for="selfEmployed" class="ml-1">Self-employed</label>
-                                </div>
-                                <div class="flex--center ml-1">
-                                    <input type="text" class="input--box" id="unEmployed" name="unEmployed" required>
-                                    <label for="unEmployed" class="ml-1">Unemployed</label>
-                                </div>
-                                <div class="flex--center ml-1">
-                                    <input type="text" class="input--box" id="retired" name="retired" required>
-                                    <label for="employed" class="ml-1">Retired</label>
-                                </div>
-                                <div class="flex--center ml-1">
-                                    <input type="text" class="input--box" id="employed" name="employed" required>
-                                    <label for="student" class="ml-1">Student</label>
-                                </div>
+                                <label for="employed" class="checkbox">
+                                    <input type="checkbox" id="employed" name="employed" required>
+                                    <span class="ml-1">Employed</span>
+                                </label>
+                                <label for="selfEmployed" class="checkbox">
+                                    <input type="checkbox" id="selfEmployed" name="selfEmployed" required>
+                                    <span class="ml-1">Self-employed</span>
+                                </label>
+                                <label for="unEmployed" class="checkbox">
+                                    <input type="checkbox" id="unEmployed" name="unEmployed" required>
+                                    <span class="ml-1">Unemployed</span>
+                                </label>
+                                <label for="employed" class="checkbox">
+                                    <input type="checkbox" id="retired" name="retired" required>
+                                    <span>Retired</span>
+                                </label>
+                                <label for="student" class="checkbox">
+                                    <input type="checkbox" id="employed" name="employed" required>
+                                    <span>Student</span>
+                                </label>
                             </div>
                         </div>
                     </div>
@@ -770,22 +775,22 @@
 
                         <div class="valuebox">
                             <div class="flex--between">
-                                <div class="flex--center">
-                                    <input type="text" class="input--box">
+                                <label for="" class="checkbox">
+                                    <input type="checkbox">
+                                    <span>Below 1,000</span>
+                                </label>
+                                <label class="checkbox">
+                                    <input type="checkbox">
                                     <label class="ml-1">Below 1,000</label>
-                                </div>
-                                <div class="flex--center">
-                                    <input type="text" class="input--box">
-                                    <label class="ml-1">Below 1,000</label>
-                                </div>
-                                <div class="flex--center">
-                                    <input type="text" class="input--box">
-                                    <label class="ml-1">5,000 - 10,000</label>
-                                </div>
-                                <div class="flex--center">
-                                    <input type="text" class="input--box">
-                                    <label class="ml-1">Above 10,000</label>
-                                </div>
+                                </label>
+                                <label class="checkbox">
+                                    <input type="checkbox">
+                                    <span>5,000 - 10,000</span>
+                                </label>
+                                <label class="checkbox">
+                                    <input type="checkbox">
+                                    <span>Above 10,000</span>
+                                </label>
                             </div>
                         </div>
                     </div>
@@ -924,7 +929,7 @@
             <!---------------------------------------------------------->
 
             <section class="container">
-                <div class="title">Second Applicant</div>
+                <div class="title">First Applicant</div>
                 <div class="primary__color--background">
 
 
@@ -933,26 +938,26 @@
                         <div class="valuebox">
                             <div class="flex--between">
                                 <div class="flex--center">
-                                    <div class="flex--center">
-                                        <input type="text" class="input--box">
-                                        <span class="ml-1">Mr.</span>
-                                    </div>
-                                    <div class="flex--center ml-1">
-                                        <input type="text" class="input--box">
-                                        <span class="ml-1">Mr.</span>
-                                    </div>
-                                    <div class="flex--center ml-1">
-                                        <input type="text" class="input--box">
-                                        <span class="ml-1">Mrs.</span>
-                                    </div>
-                                    <div class="flex--center ml-1">
-                                        <input type="text" class="input--box">
-                                        <span class="ml-1">Dr.</span>
-                                    </div>
-                                    <div class="flex--center ml-1">
-                                        <input type="text" class="input--box">
-                                        <span class="ml-1">Prof.</span>
-                                    </div>
+                                    <label class="checkbox">
+                                        <input type="checkbox" id="mr" name="mr">
+                                        <span>Mr.</span>
+                                    </label>
+                                    <label class="checkbox">
+                                        <input type="checkbox">
+                                        <span>Mr.</span>
+                                    </label>
+                                    <label class="checkbox">
+                                        <input type="checkbox" id="mrs" name="mrs">
+                                        <span>Mrs.</span>
+                                    </label>
+                                    <label class="checkbox">
+                                        <input type="checkbox" id="dr" name="dr">
+                                        <span>Dr.</span>
+                                    </label>
+                                    <label class="checkbox">
+                                        <input type="checkbox" id="prof" name="prof">
+                                        <span>Mr.</span>
+                                    </label>
                                 </div>
 
                                 <div class="flex--between">
@@ -1022,27 +1027,27 @@
 
                         <!-- Marital Status -->
                         <div class="flex--center">
-                            <div class="flex--center ml-1">
-                                <label for="maritalStatus" class="wd-2">Marital Status:</label>
-                                <input type="text" class="input--box ml-1" id="maritalStatus" name="maritalStatus"
+                            <label class="checkbox ml-1 flex--center">
+                                <label for="maritalStatus" class="wd-2 ml-1">Marital Status:</label>
+                                <input type="checkbox" class="input--box ml-1" id="maritalStatus" name="maritalStatus"
                                     required>
-                            </div>
-                            <div class="flex--center">
-                                <label for="maritalStatus" class="ml-1">Single</label>
-                                <input type="text" class="input--box ml-1" id="single" name="single" required>
-                            </div>
-                            <div class="flex--center">
-                                <label for="maritalStatus" class="ml-1">Married</label>
-                                <input type="text" class="input--box ml-1" id="married" name="married" required>
-                            </div>
-                            <div class="flex--center">
-                                <label for="maritalStatus" class="ml-1">Divorced</label>
-                                <input type="text" class="input--box ml-1" id="divorced" name="divorced" required>
-                            </div>
-                            <div class="flex--center">
-                                <label for="maritalStatus" class="ml-1">Widowed</label>
-                                <input type="text" class="input--box ml-1" id="widowed" name="widowed" required>
-                            </div>
+                            </label>
+                            <label for="maritalStatus" class="checkbox">
+                                <span>Single</span>
+                                <input type="checkbox" class="input--box ml-1" id="single" name="single" required>
+                            </label>
+                            <label for="maritalStatus" class="checkbox">
+                                <span>Married</span>
+                                <input type="checkbox" id="married" name="married" required>
+                            </label>
+                            <label class="checkbox">
+                                <span>Divorced</span>
+                                <input type="checkbox" class="input--box ml-1" id="divorced" name="divorced" required>
+                            </label>
+                            <label class="checkbox">
+                                <span>Widowed</span>
+                                <input type="checkbox" class="input--box ml-1" id="widowed" name="widowed" required>
+                            </label>
                         </div>
                     </div>
                     <!-- Gender -->
@@ -1051,14 +1056,15 @@
                         <div class="valuebox">
                             <div class="flex--between full-width">
                                 <div class="flex--center">
-                                    <div class="flex--center">
-                                        <label for="male">Male</label>
-                                        <input type="text" class="input--box ml-1" id="male" name="male" required>
-                                    </div>
-                                    <div class="flex--center ml-2">
-                                        <label for="female">Female</label>
-                                        <input type="text" class="input--box ml-1" id="female" name="female" required>
-                                    </div>
+
+                                    <label for="male" class="checkbox">
+                                        <span for="male">Male</span>
+                                        <input type="checkbox" id="male" name="male" required>
+                                    </label>
+                                    <label for="female" class="checkbox">
+                                        <span for="female">Female</span>
+                                        <input type="checkbox" id="female" name="female" required>
+                                    </label>
                                 </div>
 
                                 <div class="flex--center full-width pl-1">
@@ -1085,25 +1091,28 @@
                         <div class="labelbox">Residential Status:</div>
                         <div class="valuebox">
                             <div class="flex--between">
-                                <div class="flex--center">
-                                    <input type="text" class="input--box" id="residentGhanian" name="residentGhanian">
-                                    <label for="residentGhanian" class="ml-1">Resident Ghanian</label>
-                                </div>
-                                <div class="flex--center">
-                                    <input type="text" class="input--box" id="residentForeigner"
+                                <label for="residentGhanian" class="checkbox">
+                                    <input type="checkbox" class="input--box" id="residentGhanian"
+                                        name="residentGhanian">
+                                    <span>Resident Ghanian</span>
+                                </label>
+
+
+                                <label for="residentForeigner" class="checkbox">
+                                    <input type="checkbox" class="input--box" id="residentForeigner"
                                         name="residentForeigner">
-                                    <label for="residentForeigner" class="ml-1">Resident Foreigner</label>
-                                </div>
-                                <div class="flex--center">
-                                    <input type="text" class="input--box" id="nonResidentGhanian"
+                                    <span>Resident Foreigner</span>
+                                </label>
+                                <label for="nonResidentGhanian" class="checkbox">
+                                    <input type="checkbox" class="input--box" id="nonResidentGhanian"
                                         name="nonResidentGhanian">
-                                    <label for="nonResidentGhanian" class="ml-1">Non-Resident Ghanaian</label>
-                                </div>
-                                <div class="flex--center">
-                                    <input type="text" class="input--box" id="nonResidentForeigner"
+                                    <span>Non-Resident Ghanaian</span>
+                                </label>
+                                <label for="nonResidentForeigner" class="checkbox">
+                                    <input type="checkbox" class="input--box" id="nonResidentForeigner"
                                         name="nonResidentForeigner">
-                                    <label for="nonResidentForeigner" class="ml-1">Non-Resident Foreigner</label>
-                                </div>
+                                    <span>Non-Resident Foreigner</span>
+                                </label>
                             </div>
                         </div>
                     </div>
@@ -1443,27 +1452,26 @@
 
                         <div class="valuebox">
                             <div class="flex--between">
-                                <div class="flex--center">
-                                    <input type="text" class="input--box" id="employed" name="employed" required>
-                                    <label for="employed" class="ml-1">Employed</label>
-                                </div>
-                                <div class="flex--center ml-1">
-                                    <input type="text" class="input--box" id="selfEmployed" name="selfEmployed"
-                                        required>
-                                    <label for="selfEmployed" class="ml-1">Self-employed</label>
-                                </div>
-                                <div class="flex--center ml-1">
-                                    <input type="text" class="input--box" id="unEmployed" name="unEmployed" required>
-                                    <label for="unEmployed" class="ml-1">Unemployed</label>
-                                </div>
-                                <div class="flex--center ml-1">
-                                    <input type="text" class="input--box" id="retired" name="retired" required>
-                                    <label for="employed" class="ml-1">Retired</label>
-                                </div>
-                                <div class="flex--center ml-1">
-                                    <input type="text" class="input--box" id="employed" name="employed" required>
-                                    <label for="student" class="ml-1">Student</label>
-                                </div>
+                                <label for="employed" class="checkbox">
+                                    <input type="checkbox" id="employed" name="employed" required>
+                                    <span class="ml-1">Employed</span>
+                                </label>
+                                <label for="selfEmployed" class="checkbox">
+                                    <input type="checkbox" id="selfEmployed" name="selfEmployed" required>
+                                    <span class="ml-1">Self-employed</span>
+                                </label>
+                                <label for="unEmployed" class="checkbox">
+                                    <input type="checkbox" id="unEmployed" name="unEmployed" required>
+                                    <span class="ml-1">Unemployed</span>
+                                </label>
+                                <label for="employed" class="checkbox">
+                                    <input type="checkbox" id="retired" name="retired" required>
+                                    <span>Retired</span>
+                                </label>
+                                <label for="student" class="checkbox">
+                                    <input type="checkbox" id="employed" name="employed" required>
+                                    <span>Student</span>
+                                </label>
                             </div>
                         </div>
                     </div>
@@ -1478,8 +1486,7 @@
                                 <div class="flex--center">
                                     <input type="text" id="totalYearsOfEmployment" name="emplototalYearsOfEmploymentyed"
                                         required>
-                                    <label for="totalYearsOfEmployment" class="ml-1">Years of Current
-                                        Employment</label>
+                                    <label for="totalYearsOfEmployment" class="ml-1">Years of Current Employment</label>
                                 </div>
                                 <div class="flex--center">
                                     <input type="text" id="selfEmployed" name="selfEmployed" required>
@@ -1500,22 +1507,22 @@
 
                         <div class="valuebox">
                             <div class="flex--between">
-                                <div class="flex--center">
-                                    <input type="text" class="input--box">
+                                <label for="" class="checkbox">
+                                    <input type="checkbox">
+                                    <span>Below 1,000</span>
+                                </label>
+                                <label class="checkbox">
+                                    <input type="checkbox">
                                     <label class="ml-1">Below 1,000</label>
-                                </div>
-                                <div class="flex--center">
-                                    <input type="text" class="input--box">
-                                    <label class="ml-1">Below 1,000</label>
-                                </div>
-                                <div class="flex--center">
-                                    <input type="text" class="input--box">
-                                    <label class="ml-1">5,000 - 10,000</label>
-                                </div>
-                                <div class="flex--center">
-                                    <input type="text" class="input--box">
-                                    <label class="ml-1">Above 10,000</label>
-                                </div>
+                                </label>
+                                <label class="checkbox">
+                                    <input type="checkbox">
+                                    <span>5,000 - 10,000</span>
+                                </label>
+                                <label class="checkbox">
+                                    <input type="checkbox">
+                                    <span>Above 10,000</span>
+                                </label>
                             </div>
                         </div>
                     </div>
@@ -1681,20 +1688,8 @@
                             </div>
 
                             <div class="valuebox flex--between">
-                                <div class="flex--center mr-1">
-                                    <input type="text" class="input--box">
-                                    <input type="text" class="input--box">
-                                    <input type="text" class="input--box">
-                                    <input type="text" class="input--box">
-                                    <input type="text" class="input--box">
-                                    <input type="text" class="input--box">
-                                    <input type="text" class="input--box">
-                                    <input type="text" class="input--box">
-                                    <input type="text" class="input--box">
-                                    <input type="text" class="input--box">
-                                    <input type="text" class="input--box">
-                                    <input type="text" class="input--box">
-                                    <input type="text" class="input--box">
+                                <div class="flex--center mr-1 full-width">
+                                    <input type="text" id="accountNumber" name="accountNumber">
                                 </div>
 
                                 <div class="flex--around full-width">
@@ -1768,27 +1763,26 @@
 
                             <!-- Marital Status -->
                             <div class="flex--between ml-2">
-                                <div class="flex--center ml-1">
-                                    <label for="maritalStatus" class=" ml-2">Marital Status:</label>
-                                    <input type="text" class="input--box ml-1" id="maritalStatus" name="maritalStatus"
-                                        required>
-                                </div>
-                                <div class="flex--center">
-                                    <label for="maritalStatus" class="ml-1">Single</label>
-                                    <input type="text" class="input--box ml-1" id="single" name="single" required>
-                                </div>
-                                <div class="flex--center">
-                                    <label for="maritalStatus" class="ml-1">Married</label>
-                                    <input type="text" class="input--box ml-1" id="married" name="married" required>
-                                </div>
-                                <div class="flex--center">
-                                    <label for="maritalStatus" class="ml-1">Divorced</label>
-                                    <input type="text" class="input--box ml-1" id="divorced" name="divorced" required>
-                                </div>
-                                <div class="flex--center">
-                                    <label for="maritalStatus" class="ml-1">Widowed</label>
-                                    <input type="text" class="input--box ml-1" id="widowed" name="widowed" required>
-                                </div>
+                                <label for="maritalStatus" class="checkbox">
+                                    <span>Marital Status:</span>
+                                    <input type="checkbox" id="maritalStatus" name="maritalStatus" required>
+                                </label>
+                                <label for="maritalStatus" class="checkbox">
+                                    <span>Single</span>
+                                    <input type="checkbox" id="single" name="single" required>
+                                </label>
+                                <label for="maritalStatus" class="checkbox">
+                                    <span>Married</span>
+                                    <input type="checkbox" id="married" name="married" required>
+                                </label>
+                                <label for="maritalStatus" class="checkbox">
+                                    <span class="ml-1">Divorced</span>
+                                    <input type="checkbox" id="divorced" name="divorced" required>
+                                </label>
+                                <label for="maritalStatus" class="checkbox">
+                                    <span>Widowed</span>
+                                    <input type="checkbox" id="widowed" name="widowed" required>
+                                </label>
                             </div>
                         </div>
 
@@ -1973,7 +1967,6 @@
                         </div>
                     </div>
 
-
                     <!-- Percentage -->
                     <div class="header">
                         <div class="labelbox">Percentage:</div>
@@ -1982,31 +1975,28 @@
 
                         <!-- Marital Status -->
                         <div class="flex--between ml-2">
-                            <div class="flex--center ml-1">
-                                <label for="maritalStatus" class=" ml-2">Marital Status:</label>
-                                <input type="text" class="input--box ml-1" id="maritalStatus" name="maritalStatus"
-                                    required>
-                            </div>
-                            <div class="flex--center">
-                                <label for="maritalStatus" class="ml-1">Single</label>
-                                <input type="text" class="input--box ml-1" id="single" name="single" required>
-                            </div>
-                            <div class="flex--center">
-                                <label for="maritalStatus" class="ml-1">Married</label>
-                                <input type="text" class="input--box ml-1" id="married" name="married" required>
-                            </div>
-                            <div class="flex--center">
-                                <label for="maritalStatus" class="ml-1">Divorced</label>
-                                <input type="text" class="input--box ml-1" id="divorced" name="divorced" required>
-                            </div>
-                            <div class="flex--center">
-                                <label for="maritalStatus" class="ml-1">Widowed</label>
-                                <input type="text" class="input--box ml-1" id="widowed" name="widowed" required>
-                            </div>
+                            <label for="maritalStatus" class="checkbox">
+                                <span>Marital Status:</span>
+                                <input type="checkbox" id="maritalStatus" name="maritalStatus" required>
+                            </label>
+                            <label for="maritalStatus" class="checkbox">
+                                <span>Single</span>
+                                <input type="checkbox" id="single" name="single" required>
+                            </label>
+                            <label for="maritalStatus" class="checkbox">
+                                <span>Married</span>
+                                <input type="checkbox" id="married" name="married" required>
+                            </label>
+                            <label for="maritalStatus" class="checkbox">
+                                <span class="ml-1">Divorced</span>
+                                <input type="checkbox" id="divorced" name="divorced" required>
+                            </label>
+                            <label for="maritalStatus" class="checkbox">
+                                <span>Widowed</span>
+                                <input type="checkbox" id="widowed" name="widowed" required>
+                            </label>
                         </div>
                     </div>
-
-
                     <!-- Date of Birth -->
 
                     <div class="header">
@@ -2188,6 +2178,7 @@
                     </div>
 
 
+
                     <!-- Percentage -->
                     <div class="header">
                         <div class="labelbox">Percentage:</div>
@@ -2196,27 +2187,26 @@
 
                         <!-- Marital Status -->
                         <div class="flex--between ml-2">
-                            <div class="flex--center ml-1">
-                                <label for="maritalStatus" class=" ml-2">Marital Status:</label>
-                                <input type="text" class="input--box ml-1" id="maritalStatus" name="maritalStatus"
-                                    required>
-                            </div>
-                            <div class="flex--center">
-                                <label for="maritalStatus" class="ml-1">Single</label>
-                                <input type="text" class="input--box ml-1" id="single" name="single" required>
-                            </div>
-                            <div class="flex--center">
-                                <label for="maritalStatus" class="ml-1">Married</label>
-                                <input type="text" class="input--box ml-1" id="married" name="married" required>
-                            </div>
-                            <div class="flex--center">
-                                <label for="maritalStatus" class="ml-1">Divorced</label>
-                                <input type="text" class="input--box ml-1" id="divorced" name="divorced" required>
-                            </div>
-                            <div class="flex--center">
-                                <label for="maritalStatus" class="ml-1">Widowed</label>
-                                <input type="text" class="input--box ml-1" id="widowed" name="widowed" required>
-                            </div>
+                            <label for="maritalStatus" class="checkbox">
+                                <span>Marital Status:</span>
+                                <input type="checkbox" id="maritalStatus" name="maritalStatus" required>
+                            </label>
+                            <label for="maritalStatus" class="checkbox">
+                                <span>Single</span>
+                                <input type="checkbox" id="single" name="single" required>
+                            </label>
+                            <label for="maritalStatus" class="checkbox">
+                                <span>Married</span>
+                                <input type="checkbox" id="married" name="married" required>
+                            </label>
+                            <label for="maritalStatus" class="checkbox">
+                                <span class="ml-1">Divorced</span>
+                                <input type="checkbox" id="divorced" name="divorced" required>
+                            </label>
+                            <label for="maritalStatus" class="checkbox">
+                                <span>Widowed</span>
+                                <input type="checkbox" id="widowed" name="widowed" required>
+                            </label>
                         </div>
                     </div>
 
@@ -2410,30 +2400,28 @@
 
                         <!-- Marital Status -->
                         <div class="flex--between ml-2">
-                            <div class="flex--center ml-1">
-                                <label for="maritalStatus" class=" ml-2">Marital Status:</label>
-                                <input type="text" class="input--box ml-1" id="maritalStatus" name="maritalStatus"
-                                    required>
-                            </div>
-                            <div class="flex--center">
-                                <label for="maritalStatus" class="ml-1">Single</label>
-                                <input type="text" class="input--box ml-1" id="single" name="single" required>
-                            </div>
-                            <div class="flex--center">
-                                <label for="maritalStatus" class="ml-1">Married</label>
-                                <input type="text" class="input--box ml-1" id="married" name="married" required>
-                            </div>
-                            <div class="flex--center">
-                                <label for="maritalStatus" class="ml-1">Divorced</label>
-                                <input type="text" class="input--box ml-1" id="divorced" name="divorced" required>
-                            </div>
-                            <div class="flex--center">
-                                <label for="maritalStatus" class="ml-1">Widowed</label>
-                                <input type="text" class="input--box ml-1" id="widowed" name="widowed" required>
-                            </div>
+                            <label for="maritalStatus" class="checkbox">
+                                <span>Marital Status:</span>
+                                <input type="checkbox" id="maritalStatus" name="maritalStatus" required>
+                            </label>
+                            <label for="maritalStatus" class="checkbox">
+                                <span>Single</span>
+                                <input type="checkbox" id="single" name="single" required>
+                            </label>
+                            <label for="maritalStatus" class="checkbox">
+                                <span>Married</span>
+                                <input type="checkbox" id="married" name="married" required>
+                            </label>
+                            <label for="maritalStatus" class="checkbox">
+                                <span class="ml-1">Divorced</span>
+                                <input type="checkbox" id="divorced" name="divorced" required>
+                            </label>
+                            <label for="maritalStatus" class="checkbox">
+                                <span>Widowed</span>
+                                <input type="checkbox" id="widowed" name="widowed" required>
+                            </label>
                         </div>
                     </div>
-
 
                     <!-- Date of Birth -->
 
@@ -2579,10 +2567,10 @@
                     </div>
 
                     <div class="primary__color--background">
-                        <div class="flex--center">
-                            <input type="text" class="input--box">
-                            <span class="sub--title ml-1">Product Agreement - Investcorp Money Marketing:</span>
-                        </div>
+                        <label class="checkbox">
+                            <input type="checkbox">
+                            <span class="sub--title">Product Agreement - Investcorp Money Marketing:</span>
+                        </label>
                         <div>
                             <p>A low risk product investing in high quality treasury and treasury backed securities</p>
 
@@ -2642,10 +2630,10 @@
                     </div>
 
                     <div class="primary__color--background">
-                        <div class="flex--center">
-                            <input type="text" class="input--box">
-                            <span class="sub--title ml-1">Product Agreement - Investcorp Money Marketing:</span>
-                        </div>
+                        <label class="checkbox">
+                            <input type="checkbox">
+                            <span class="sub--title">Product Agreement - Investcorp Money Marketing:</span>
+                        </label>
                         <div>
                             <p>A low risk product investing in high quality treasury and treasury backed securities</p>
 
@@ -2709,10 +2697,10 @@
                     </div>
 
                     <div class="primary__color--background">
-                        <div class="flex--center">
-                            <input type="text" class="input--box">
-                            <span class="sub--title ml-1">Product Agreement - Investcorp Money Marketing:</span>
-                        </div>
+                        <label class="checkbox">
+                            <input type="checkbox">
+                            <span class="sub--title">Product Agreement - Investcorp Money Marketing:</span>
+                        </label>
                         <div>
                             <p>A low risk product investing in high quality treasury and treasury backed securities</p>
 
@@ -2773,10 +2761,10 @@
                     </div>
 
                     <div class="primary__color--background">
-                        <div class="flex--center">
-                            <input type="text" class="input--box">
-                            <span class="sub--title ml-1">Product Agreement - Investcorp Money Marketing:</span>
-                        </div>
+                        <label class="checkbox">
+                            <input type="checkbox">
+                            <span class="sub--title">Product Agreement - Investcorp Money Marketing:</span>
+                        </label>
                         <div>
                             <p>A low risk product investing in high quality treasury and treasury backed securities</p>
 
@@ -2836,10 +2824,10 @@
                     </div>
 
                     <div class="primary__color--background">
-                        <div class="flex--center">
-                            <input type="text" class="input--box">
-                            <span class="sub--title ml-1">Product Agreement - Investcorp Money Marketing:</span>
-                        </div>
+                        <label class="checkbox">
+                            <input type="checkbox">
+                            <span class="sub--title">Product Agreement - Investcorp Money Marketing:</span>
+                        </label>
                         <div>
                             <p>A low risk product investing in high quality treasury and treasury backed securities</p>
 
@@ -2908,15 +2896,15 @@
                             <div class="labelbox">Mode of Statement Delivery:</div>
                             <div class="valuebox">
                                 <div class="flex--center">
-                                    <div class="flex--center">
-                                        <input type="text" class="input--box">
-                                        <label for="email" class="ml-1">Email</label>
-                                    </div>
+                                    <label for="email" class="checkbox">
+                                        <input type="checkbox">
+                                        <span>Email</span>
+                                    </label>
                                     <div class="spacer"></div>
-                                    <div class="flex--center ml-1">
-                                        <input type="text" class="input--box">
-                                        <label for="collection" class="ml-1">Collection</label>
-                                    </div>
+                                    <label for="collection" class="checkbox">
+                                        <input type="checkbox" class="input--box">
+                                        <span>Collection</span>
+                                    </label>
                                 </div>
                             </div>
                         </div>
@@ -2931,10 +2919,10 @@
                                     <span>Sent Quarterly (default)</span>
                                     <div class="flex--center ml-1">
 
-                                        <div class="flex--center ml-2" style="margin-left: 73px;">
-                                            <input type="text" class="input--box">
-                                            <label for="collection" class="ml-1">On Demand</label>
-                                        </div>
+                                        <label class="checkbox" style="margin-left: 65px;">
+                                            <input type="checkbox">
+                                            <label for="collection" class="ml-1 mt-1">On Demand</label>
+                                        </label>
                                     </div>
                                 </div>
                             </div>
@@ -2955,27 +2943,26 @@
 
                             <div class="valuebox">
                                 <div class="flex--between">
-                                    <div class="flex--center">
-                                        <input type="text" class="input--box" id="salary" name="salary" required>
-                                        <label for="salary" class="ml-1">Salary</label>
+                                    <label for="salary" class="checkbox">
+                                        <input type="checkbox" id="salary" name="salary" required>
+                                        <span>Salary</span>
+                                    </label>
+                                    <label for="proceeds" class="checkbox">
+                                        <input type="checkbox" id="proceeds" name="proceeds" required>
+                                        <span>Proceeds from Business</span>
+                                    </label>
+                                    <label for="gifts" class="checkbox">
+                                        <input type="checkbox" id="gifts" name="gifts" required>
+                                        <span>Inheritance/Gifts</span>
+                                    </label>
+                                    <div class="checkbox">
+                                        <input type="checkbox" id="personalSavings" name="personalSavings" required>
+                                        <span>Personal Savings</span>
                                     </div>
-                                    <div class="flex--center ml-1">
-                                        <input type="text" class="input--box" id="proceeds" name="proceeds" required>
-                                        <label for="proceeds" class="ml-1">Proceeds from Business</label>
-                                    </div>
-                                    <div class="flex--center ml-1">
-                                        <input type="text" class="input--box" id="gifts" name="gifts" required>
-                                        <label for="gifts" class="ml-1">Inheritance/Gifts</label>
-                                    </div>
-                                    <div class="flex--center ml-1">
-                                        <input type="text" class="input--box" id="personalSavings"
-                                            name="personalSavings" required>
-                                        <label for="personalSavings" class="ml-1">Personal Savings</label>
-                                    </div>
-                                    <div class="flex--center ml-1">
-                                        <input type="text" class="input--box" id="others" name="others" required>
-                                        <label for="others" class="ml-1">Others</label>
-                                    </div>
+                                    <label class="checkbox">
+                                        <input type="checkbox" id="others" name="others" required>
+                                        <span>Others</span>
+                                    </label>
                                 </div>
                             </div>
 
@@ -3020,31 +3007,31 @@
                             <div class="labelbox">Top-ups:</div>
                             <div class="valuebox">
                                 <div class="flex--between">
-                                    <div class="flex--center">
-                                        <input type="text" class="input--box" id="monthly" name="monthly">
-                                        <label for="monthly" class="ml-1">Monthly</label>
+                                    <label for="monthly" class="checkbox">
+                                        <input type="checkbox" id="monthly" name="monthly">
+                                        <span>Monthly</span>
+                                    </label>
+                                    <label for="quarterly" class="checkbox">
+                                        <input type="checkbox" id="quarterly" name="quarterly">
+                                        <span for="quarterly">Quarterly</span>
+                                    </label>
+                                    <div for="biAnnually" class="checkbox">
+                                        <input type="checkbox" id="biAnnually" name="biAnnually">
+                                        <span>Bi-Annually</span>
                                     </div>
-                                    <div class="flex--center">
-                                        <input type="text" class="input--box" id="quarterly" name="quarterly">
-                                        <label for="quarterly" class="ml-1">Quarterly</label>
-                                    </div>
-                                    <div class="flex--center">
-                                        <input type="text" class="input--box" id="biAnnually" name="biAnnually">
-                                        <label for="biAnnually" class="ml-1">Bi-Annually</label>
-                                    </div>
-                                    <div class="flex--center">
-                                        <input type="text" class="input--box" id="monthly" name="monthly">
-                                        <label for="monthly" class="ml-1">Monthly</label>
-                                    </div>
-                                    <div class="flex--center">
-                                        <input type="text" class="input--box" id="annually" name="annually">
-                                        <label for="annually" class="ml-1">Annually</label>
-                                    </div>
+                                    <label for="monthly" class="checkbox">
+                                        <input type="checkbox" id="monthly" name="monthly">
+                                        <span for="monthly">Monthly</span>
+                                    </label>
+                                    <label for="annually" class="checkbox">
+                                        <input type="checkbox" id="annually" name="annually">
+                                        <span>Annually</span>
+                                    </label>
 
-                                    <div class="flex--center">
-                                        <input type="text" id="others" name="others">
-                                        <label for="others" class="ml-1">Others</label>
-                                    </div>
+                                    <label for="others" class="checkbox">
+                                        <input type="checkbox" id="others" name="others">
+                                        <span>Others</span>
+                                    </label>
                                 </div>
                             </div>
                         </div>
@@ -3055,26 +3042,27 @@
                             <div class="labelbox">Withdrawals:</div>
                             <div class="valuebox">
                                 <div class="flex--between">
-                                    <div class="flex--center">
-                                        <input type="text" class="input--box" id="monthly" name="monthly">
-                                        <label for="monthly" class="ml-1">Monthly</label>
+                                    <label for="monthly" class="checkbox">
+                                        <input type="checkbox" id="monthly" name="monthly">
+                                        <span>Monthly</span>
+                                    </label>
+                                    <label for="quarterly" class="checkbox">
+                                        <input type="checkbox" id="quarterly" name="quarterly">
+                                        <span for="quarterly">Quarterly</span>
+                                    </label>
+                                    <div for="biAnnually" class="checkbox">
+                                        <input type="checkbox" id="biAnnually" name="biAnnually">
+                                        <span>Bi-Annually</span>
                                     </div>
-                                    <div class="flex--center">
-                                        <input type="text" class="input--box" id="quarterly" name="quarterly">
-                                        <label for="quarterly" class="ml-1">Quarterly</label>
-                                    </div>
-                                    <div class="flex--center">
-                                        <input type="text" class="input--box" id="biAnnually" name="biAnnually">
-                                        <label for="biAnnually" class="ml-1">Bi-Annually</label>
-                                    </div>
-                                    <div class="flex--center">
-                                        <input type="text" class="input--box" id="monthly" name="monthly">
-                                        <label for="monthly" class="ml-1">Monthly</label>
-                                    </div>
-                                    <div class="flex--center">
-                                        <input type="text" class="input--box" id="annually" name="annually">
-                                        <label for="annually" class="ml-1">Annually</label>
-                                    </div>
+                                    <label for="monthly" class="checkbox">
+                                        <input type="checkbox" id="monthly" name="monthly">
+                                        <span for="monthly">Monthly</span>
+                                    </label>
+                                    <label for="annually" class="checkbox">
+                                        <input type="checkbox" id="annually" name="annually">
+                                        <span>Annually</span>
+                                    </label>
+
 
                                     <div class="flex--center">
                                         <input type="text" id="others" name="others">
@@ -3116,23 +3104,22 @@
 
                             <div class="valuebox">
                                 <div class="flex--center">
-                                    <div class="flex--center">
-                                        <input type="text" class="input--box" id="salary" name="salary" required>
-                                        <label for="salary" class="ml-1">One to Sign</label>
-                                    </div>
-                                    <div class="flex--center ml-1 wd-2">
-                                        <input type="text" class="input--box" id="proceeds" name="proceeds" required>
-                                        <label for="proceeds" class="ml-1">Two to Sign</label>
-                                    </div>
-                                    <div class="flex--center ml-1 wd-2">
-                                        <input type="text" class="input--box" id="gifts" name="gifts" required>
-                                        <label for="gifts" class="ml-1">Three to Sign</label>
-                                    </div>
-                                    <div class="flex--center ml-1">
-                                        <input type="text" class="input--box" id="personalSavings"
-                                            name="personalSavings" required>
-                                        <label for="personalSavings" class="ml-1">Four to Sign</label>
-                                    </div>
+                                    <label for="salary" class="checkbox">
+                                        <input type="checkbox" id="salary" name="salary" required>
+                                        <span>One to Sign</span>
+                                    </label>
+                                    <label for="proceeds" class="checkbox">
+                                        <input type="checkbox" id="proceeds" name="proceeds" required>
+                                        <span>Two to Sign</span>
+                                    </label>
+                                    <label for="gifts" class="checkbox">
+                                        <input for="gifts" type="checkbox" id="gifts" name="gifts" required>
+                                        <span>Three to Sign</span>
+                                    </label>
+                                    <label for="personalSavings" class="checkbox ml-1">
+                                        <input type="checkbox" id="personalSavings" name="personalSavings" required>
+                                        <span>Four to Sign</span>
+                                    </label>
                                 </div>
                             </div>
                         </div>
@@ -3423,14 +3410,14 @@
                                 military official,
                                 senior public corporation officer, high rank political party official in Ghana</span>
                             <div class="flex--center">
-                                <div class="flex--center">
-                                    <input type="text" class="input--box ml-1" id="yes" name="yes">
-                                    <label for="yes" class="ml-1">Yes</label>
-                                </div>
-                                <div class="flex--center ml-1">
-                                    <input type="text" class="input--box" id="no" name="no">
-                                    <label for="no" class="ml-1">No</label>
-                                </div>
+                                <label for="yes" class="checkbox">
+                                    <input type="checkbox" id="yes" name="yes">
+                                    <span>Yes</span>
+                                </label>
+                                <label for="no" class="checkbox">
+                                    <input type="checkbox" id="no" name="no">
+                                    <span>No</span>
+                                </label>
                             </div>
                         </div>
 
@@ -3450,14 +3437,14 @@
                                 military official,
                                 senior public corporation officer, high rank political party official in Ghana</span>
                             <div class="flex--center">
-                                <div class="flex--center">
-                                    <input type="text" class="input--box ml-1" id="yes" name="yes">
-                                    <label for="yes" class="ml-1">Yes</label>
-                                </div>
-                                <div class="flex--center ml-1">
-                                    <input type="text" class="input--box" id="no" name="no">
-                                    <label for="no" class="ml-1">No</label>
-                                </div>
+                                <label for="yes" class="checkbox">
+                                    <input type="checkbox" id="yes" name="yes">
+                                    <span>Yes</span>
+                                </label>
+                                <label for="no" class="checkbox">
+                                    <input type="checkbox" id="no" name="no">
+                                    <span>No</span>
+                                </label>
                             </div>
                         </div>
 
@@ -3478,72 +3465,67 @@
                             <span>Are you a citizen of any foreign country (besides Ghana)?</span>
                             <div class="spacer" style="width: 162px;"></div>
                             <div class="flex--center">
-                                <div class="flex--center ml-1">
-                                    <input type="text" class="input--box">
-                                    <label for="yes" class="ml-1">Yes</label>
-                                </div>
-
-                                <div class="flex--center ml-1">
-                                    <input type="text" class="input--box">
-                                    <label for="no" class="ml-1">No</label>
-                                </div>
+                                <label for="yes" class="checkbox">
+                                    <input type="checkbox" id="yes" name="yes">
+                                    <span>Yes</span>
+                                </label>
+                                <label for="no" class="checkbox">
+                                    <input type="checkbox" id="no" name="no">
+                                    <span>No</span>
+                                </label>
                             </div>
                         </div>
                         <!-- 2 -->
                         <div class="flex--center">
                             <span>Do you hold passport of any foreign country (besides Ghana)?</span>
                             <div class="spacer" style="width: 134px;"></div>
-                            <div class="flex--center ml-1">
-                                <input type="text" class="input--box">
-                                <label for="yes" class="ml-1">Yes</label>
-                            </div>
-
-                            <div class="flex--center ml-1">
-                                <input type="text" class="input--box mt-1">
-                                <label for="no" class="ml-1">No</label>
-                            </div>
+                            <label for="yes" class="checkbox">
+                                <input type="checkbox" id="yes" name="yes">
+                                <span>Yes</span>
+                            </label>
+                            <label for="no" class="checkbox">
+                                <input type="checkbox" id="no" name="no">
+                                <span>No</span>
+                            </label>
                         </div>
                         <!-- 3 -->
                         <div class="flex--center">
                             <span>Do you hold green card of any foreign country (besides Ghana)?</span>
                             <div class="spacer" style="width: 124px;"></div>
-                            <div class="flex--center ml-1">
-                                <input type="text" class="input--box mt-1">
-                                <label for="yes" class="ml-1">Yes</label>
-                            </div>
-
-                            <div class="flex--center ml-1">
-                                <input type="text" class="input--box mt-1">
-                                <label for="no" class="ml-1">No</label>
-                            </div>
+                            <label for="yes" class="checkbox">
+                                <input type="checkbox" id="yes" name="yes">
+                                <span>Yes</span>
+                            </label>
+                            <label for="no" class="checkbox">
+                                <input type="checkbox" id="no" name="no">
+                                <span>No</span>
+                            </label>
                         </div>
                         <!-- 4 -->
                         <div class="flex--center">
                             <span>Are you resident in any foreign country?</span>
                             <div class="spacer" style="width: 263px;"></div>
-                            <div class="flex--center ml-1">
-                                <input type="text" class="input--box mt-1">
-                                <label for="yes" class="ml-1">Yes</label>
-                            </div>
-
-                            <div class="flex--center ml-1">
-                                <input type="text" class="input--box mt-1">
-                                <label for="no" class="ml-1">No</label>
-                            </div>
+                            <label for="yes" class="checkbox">
+                                <input type="checkbox" id="yes" name="yes">
+                                <span>Yes</span>
+                            </label>
+                            <label for="no" class="checkbox">
+                                <input type="checkbox" id="no" name="no">
+                                <span>No</span>
+                            </label>
                         </div>
                         <!-- 5 -->
                         <div class="flex--center">
                             <span>Have you spent more than 183 days in any foreign country?</span>
                             <div class="spacer"></div>
-                            <div class="flex--center ml-1">
-                                <input type="text" class="input--box mt-1">
-                                <label for="yes" class="ml-1">Yes</label>
-                            </div>
-
-                            <div class="flex--center ml-1">
-                                <input type="text" class="input--box mt-1">
-                                <label for="no" class="ml-1">No</label>
-                            </div>
+                            <label for="yes" class="checkbox">
+                                <input type="checkbox" id="yes" name="yes">
+                                <span>Yes</span>
+                            </label>
+                            <label for="no" class="checkbox">
+                                <input type="checkbox" id="no" name="no">
+                                <span>No</span>
+                            </label>
                         </div>
                         <em class="mt-1">If the responses to any of the above questions is Yes, please provide the
                             following
@@ -3748,35 +3730,37 @@
                                     investment?</span>
 
                                 <div class="flex--center mt-1">
-                                    <div class="flex--center">
-                                        <input type="text" class="input--box">
-                                        <label for="" class="ml-1">0 to 1 year</label>
-                                    </div>
-                                    <div class="flex--center ml-1">
-                                        <input type="text" class="input--box">
-                                        <label for="" class="ml-1">2 to 3 years</label>
-                                    </div>
-                                    <div class="flex--center ml-1">
-                                        <input type="text" class="input--box">
-                                        <label for="" class="ml-1">4 years and above</label>
-                                    </div>
+                                    <label for="" class="checkbox">
+                                        <input type="checkbox">
+                                        <span>0 to 1 year</span>
+                                    </label>
+                                    <label for="" class="checkbox">
+                                        <input type="checkbox">
+                                        <span>2 to 3 years</span>
+                                    </label>
+                                    <label for="" class="checkbox">
+                                        <input type="checkbox">
+                                        <span>4 years & bbove</span>
+                                    </label>
                                 </div>
 
                                 <span>2. Do you have an emergency fund (Accumulated savings)?</span>
                                 <div class="flex--center mt-1">
-                                    <div class="flex--center">
-                                        <input type="text" class="input--box">
-                                        <label for="no" class="ml-1">No</label>
-                                    </div>
-                                    <div class="flex--center ml-1">
-                                        <input type="text" class="input--box">
-                                        <label for="" class="ml-1">Yes, but less than six months after-tax
-                                            income</label>
-                                    </div>
-                                    <div class="flex--center ml-1">
-                                        <input type="text" class="input--box">
-                                        <label for="" class="ml-1">Yes, I have adequate emergency funds</label>
-                                    </div>
+                                    <label for="no" class="checkbox">
+                                        <input type="checkbox" id="no" name="no">
+                                        <span>No</span>
+                                    </label>
+                                    <div class="spacer"></div>
+                                    <label class="checkbox">
+                                        <input type="checkbox">
+                                        <span for="">Yes, but less than six months after-tax
+                                            income</span>
+                                    </label>
+                                    <div class="spacer"></div>
+                                    <label class="checkbox">
+                                        <input type="checkbox" class="input--box">
+                                        <span for="" class="ml-1">Yes, I have adequate emergency funds</span>
+                                    </label>
                                 </div>
                             </div>
                         </div>
@@ -3788,22 +3772,22 @@
 
                         <div>
                             <span>3. Have you ever invested in individual stocks or equity funds?</span>
-                            <div class="flex--between">
-                                <label for="">No, and I would be uncomfortable with the risk if I did</label>
-                                <input type="text" class="input--box">
-                            </div>
-                            <div class="flex--between mt-1">
-                                <label for="">No, but I would be comfortable with the risk if I did</label>
-                                <input type="text" class="input--box">
-                            </div>
-                            <div class="flex--between mt-1">
-                                <label for="">Yes, but I was uncomfortable with the risk</label>
-                                <input type="text" class="input--box">
-                            </div>
-                            <div class="flex--between mt-1">
-                                <label for="">Yes, and I felt comfortable with the risk</label>
-                                <input type="text" class="input--box">
-                            </div>
+                            <label class="flex--between full-width checkbox">
+                                <span>No, and I would be uncomfortable with the risk if I did</span>
+                                <input type="checkbox">
+                            </label>
+                            <label class="flex--between full-width checkbox">
+                                <span>No, but I would be comfortable with the risk if I did</span>
+                                <input type="checkbox">
+                            </label>
+                            <label class="flex--between full-width checkbox">
+                                <span for="">Yes, but I was uncomfortable with the risk</span>
+                                <input type="checkbox">
+                            </label>
+                            <label class="flex--between full-width checkbox">
+                                <span for="">Yes, and I felt comfortable with the risk</span>
+                                <input type="checkbox">
+                            </label>
                         </div>
 
                         <em>Your comfort level with investment risk influences how aggressively or conservatively you
@@ -3817,36 +3801,36 @@
                             <p>I would only select investments that have a low degree of risk associated with them (i.e.
                                 it is
                                 unlikely I will lose my original investment)</p>
-                            <div class="flex--between">
-                                <label for="">I prefer to select mixed investments with emphasis on those with a low
+                            <div class="flex--between full-width checkbox">
+                                <span>I prefer to select mixed investments with emphasis on those with a low
                                     degree of
                                     risk and a small portion in others that have a higher degree of risk that may yield
                                     greater
                                     returns
-                                </label>
-                                <input type="text" class="input--box">
+                                </span>
+                                <input type="checkbox">
                             </div>
-                            <div class="flex--between mt-1">
-                                <label for="">I prefer to select a balanced mix of investments - some that have low
+                            <label class="flex--between full-width checkbox">
+                                <span>I prefer to select a balanced mix of investments - some that have low
                                     degree of
                                     risk, others that have a higher degree of risk that may yield greater
-                                    returns</label>
-                                <input type="text" class="input--box">
-                            </div>
-                            <div class="flex--between mt-1">
-                                <label for="">I prefer to select an aggressive mix of investments which exhibit a low
+                                    returns</span>
+                                <input type="checkbox">
+                            </label>
+                            <label class="flex--between full-width checkbox">
+                                <span>I prefer to select an aggressive mix of investments which exhibit a low
                                     degree of
                                     risk, but with emphasis on others that have a high degree of risk that may yield
                                     greater
-                                    returns</label>
-                                <input type="text" class="input--box">
-                            </div>
-                            <div class="flex--between mt-1">
-                                <label for="">I would select an investment that has only a high degree of risk and a
+                                    returns</span>
+                                <input type="checkbox">
+                            </label>
+                            <label class="flex--between full-width checkbox">
+                                <span>I would select an investment that has only a high degree of risk and a
                                     greater
-                                    potential for higher returns</label>
-                                <input type="text" class="input--box">
-                            </div>
+                                    potential for higher returns</span>
+                                <input type="checkbox">
+                            </label>
                         </div>
 
 
@@ -3856,24 +3840,24 @@
                             <p>The value of most investments fluctuate over time. How would you feel if an investment
                                 you had
                                 committed to for three years or more lost some of its value during the first year.</p>
-                            <div class="flex--between">
-                                <label for=""> (a) I would be extremely concerned and would sell my investment
-                                </label>
-                                <input type="text" class="input--box">
+                            <label class="flex--between full-width checkbox">
+                                <span>(a) I would be extremely concerned and would sell my investment
+                                </span>
+                                <input type="checkbox">
+                            </label>
+                            <div class="flex--between full-width checkbox">
+                                <span> (b) I would be concerned and may consider selling my investment</span>
+                                <input type="checkbox">
                             </div>
-                            <div class="flex--between mt-1">
-                                <label for=""> (b) I would be concerned and may consider selling my investment</label>
-                                <input type="text" class="input--box">
-                            </div>
-                            <div class="flex--between mt-1">
-                                <label for="">(c) I would be concerned, but I would not consider selling my
-                                    investment</label>
-                                <input type="text" class="input--box">
-                            </div>
-                            <div class="flex--between mt-1">
-                                <label for="">(d) I would not be overly concerned given my long-term investment
-                                    philosophy</label>
-                                <input type="text" class="input--box">
+                            <label class="flex--between full-width checkbox">
+                                <span>(c) I would be concerned, but I would not consider selling my
+                                    investment</span>
+                                <input type="checkbox">
+                            </label>
+                            <div class="flex--between full-width checkbox">
+                                <span for="">(d) I would not be overly concerned given my long-term investment
+                                    philosophy</span>
+                                <input type="checkbox">
                             </div>
                         </div>
                     </div>
@@ -3898,17 +3882,17 @@
 
                             <div class="valuebox">
                                 <div class="flex--center">
-                                    <div class="flex--center">
-                                        <input type="text" class="input--box">
-                                        <label for="low" class="ml-1">Low</label>
-                                    </div>
-                                    <div class="flex--center ml-1">
-                                        <input type="text" class="input--box">
-                                        <label for="medium" class="ml-1">Medium</label>
-                                    </div>
-                                    <div class="flex--center ml-1">
-                                        <input type="text" class="input--box">
-                                        <label for="high" class="ml-1">High</label>
+                                    <label class="checkbox">
+                                        <input type="checkbox">
+                                        <span>Low</span>
+                                    </label>
+                                    <label class="checkbox">
+                                        <input type="checkbox">
+                                        <span>Medium</span>
+                                    </label>
+                                    <div class="checkbox">
+                                        <input type="checkbox">
+                                        <span>High</span>
                                     </div>
                                 </div>
                             </div>
@@ -3920,47 +3904,47 @@
                             </div>
 
                             <div class="flex--center">
+                                <label class="checkbox">
+                                    <input type="checkbox">
+                                    <span>PEP</span>
+                                </label>
+                                <label for="nonResident" class="checkbox">
+                                    <input type="checkbox">
+                                    <span>Non-Resident</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="header">
+                            <div class="labelbox"></div>
+                            <div class="valuebox">
+                                <div class="checkbox">
+                                    <label class="checkbox full-width">
+                                        <input type="checkbox">
+                                        <span>High Risk Business (Refer to guide)</span>
+                                    </label>
+                                    <div class="spacer"></div>
+                                    <div class="flex--center full-width">
+                                        <span>State nature of business:</span>
+                                        <input type="text">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="header">
+                            <div class="labelbox"></div>
+                            <div class="valuebox">
                                 <div class="flex--center">
-                                    <input type="text" class="input--box">
-                                    <label for="pep" class="ml-1">PEP</label>
-                                </div>
-                                <div class="flex--center ml-1">
-                                    <input type="text" class="input--box">
-                                    <label for="nonResident" class="ml-1">Non-Resident</label>
-                                </div>
-                            </div>
-                        </div>
+                                    <label class="checkbox">
+                                        <input type="checkbox">
+                                        <span class="mr-1">High Risk Country</span>
+                                    </label>
 
-                        <div class="header">
-                            <div class="labelbox"></div>
-                            <div class="valuebox">
-                                <div class="flex--between">
-                                    <div class="flex--center full-width">
-                                        <input type="text" class="input--box">
-                                        <label class="ml-1" for="">High Risk Business (Refer to guide)</label>
-                                    </div>
-                                    <div class="spacer"></div>
-                                    <div class="flex--center full-width">
-                                        <label class="ml-1" for="">State nature of business:</label>
-                                        <input type="text">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="header">
-                            <div class="labelbox"></div>
-                            <div class="valuebox">
-                                <div class="flex--between">
-                                    <div class="flex--center full-width">
-                                        <input type="text" class="input--box">
-                                        <label class="ml-1 full-width" for="">High Risk Country</label>
-                                    </div>
-                                    <div class="spacer"></div>
-                                    <div class="flex--center full-width">
-                                        <label class="ml-1 full-with" for="">State Country:</label>
-                                        <input type="text">
-                                    </div>
+                                    <label class="flex--center" style="margin-left:222px">
+                                        <span class="full-width ">State Country:</span>
+                                        <input type="text" class="full-width">
+                                    </label>
                                 </div>
                             </div>
                         </div>
@@ -3970,33 +3954,33 @@
                 <section class="container">
                     <div class="title">Account Opening Checklist</div>
                     <div class="primary__color--background">
-                        <div class="flex--between">
-                            <label for="">1. Completed Account Opening Pack</label>
-                            <input type="text" class="input--box mt-1">
-                        </div>
-                        <div class="flex--between">
-                            <label for="">2. Valid national identification document of each signatory to the account
+                        <label class="flex--between full-width checkbox">
+                            <span>1. Completed Account Opening Pack</span>
+                            <input type="checkbox" class="input--box mt-1">
+                        </label>
+                        <div class="flex--between full-width checkbox">
+                            <span>2. Valid national identification document of each signatory to the account
                                 (Passport,
-                                National ID, Driver Licence, Voter’s ID card)</label>
-                            <input type="text" class="input--box mt-1">
+                                National ID, Driver Licence, Voter’s ID card)</span>
+                            <input type="checkbox">
                         </div>
-                        <div class="flex--between">
-                            <label for="">3. Minimum initial investment</label>
-                            <input type="text" class="input--box mt-1">
-                        </div>
-                        <div class="flex--between">
-                            <label for="">4. Completed mandate card</label>
-                            <input type="text" class="input--box mt-1">
-                        </div>
-                        <div class="flex--between">
-                            <label for="">5. One (1) passport photograph</label>
-                            <input type="text" class="input--box mt-1">
-                        </div>
+                        <label class="flex--between full-width checkbox">
+                            <span>3. Minimum initial investment</span>
+                            <input type="checkbox">
+                        </label>
+                        <label class="flex--between full-width checkbox">
+                            <span>4. Completed mandate card</span>
+                            <input type="checkbox">
+                        </label>
+                        <label class="flex--between full-width checkbox">
+                            <span>5. One (1) passport photograph</span>
+                            <input type="checkbox">
+                        </label>
 
-                        <div class="flex--between">
-                            <label for="">6. Complete verification of account holder’s address</label>
-                            <input type="text" class="input--box mt-1">
-                        </div>
+                        <label class="flex--between full-width checkbox">
+                            <span for="">6. Complete verification of account holder’s address</span>
+                            <input type="checkbox">
+                        </label>
                     </div>
 
 
