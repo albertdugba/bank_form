@@ -1,0 +1,48 @@
+@import 'reset';
+@import 'colors';
+@import 'utilities';
+@import 'mixins';
+@import 'header';
+
+* {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100%;
+  margin: 0;
+  font-size: 95%;
+  color: $blue400;
+  line-height: 1.4;
+}
+
+#container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 10px;
+}
+
+.header {
+  flex: 1 1 auto;
+  width: 100%;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.labelbox {
+  flex: 0 0 15%;
+  margin-top: 0.5rem;
+}
+
+.valuebox {
+  flex: 0 0 85%;
+}

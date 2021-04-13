@@ -1,0 +1,18 @@
+.photograph__placeholder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40vh;
+  width: 230px;
+  background: $backgroundColor;
+}
+
+.account__section {
+  .input__container {
+    @include flex--center;
+  }
+}
+
+.wd-5 {
+  width: 100%;
+}

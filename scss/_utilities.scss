@@ -1,31 +1,18 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
-}
-
-body {
-  padding: 0;
-  margin: 0;
-  font-family: 'Roboto', sans-serif;
-  font-size: 100%;
-}
+@import 'mixins';
 
 .container {
-  max-width: 1100px;
+  max-width: $maxWidth;
   margin: 10px auto;
 }
 
 .title {
-  color: #fff;
-  background-color: #003e67;
+  color: $textColorWhite;
+  background-color: $blue400;
   padding: 0.4rem;
   width: 100%;
   margin-top: -9px;
   text-transform: uppercase;
 }
-
 .sub--title {
   text-transform: uppercase;
 }
@@ -37,40 +24,40 @@ body {
 .font--small {
   font-size: 13px;
 }
-
 .primary__color--background {
-  padding: 1rem;
-  background-color: #e3f3fb;
+  padding: $bodyPadding;
+  background-color: $blue100;
 }
 
+// Flex-box
 .flex {
   display: flex;
 }
 
 .flex--between {
-  display: flex;
+  @include flex;
   align-items: center;
   justify-content: space-between;
 }
 
 .flex--column {
-  display: flex;
+  @include flex;
   flex-direction: column;
 }
 
 .flex--center {
-  display: flex;
+  @include flex;
   align-items: center;
 }
 
 .flex--around {
-  display: flex;
+  @include flex;
   align-items: center;
   justify-content: space-around;
 }
 
 .flex--evenly {
-  display: flex;
+  @include flex;
   align-items: center;
   justify-content: space-evenly;
 }
@@ -78,34 +65,36 @@ body {
 .input--box {
   height: 30px;
   width: 30px;
-  border: 2px solid #003e67;
+  border: $borderColor;
   padding: 0.2rem 0.4rem;
 }
 
+// Boxes
 .box {
   display: block;
   height: 35px;
   width: 35px;
-  border: 2px solid #003e67;
+  border: $borderColor;
   border-left: none;
   background: #fff;
-}
 
-.box:first-child {
-  border: 2px solid #003e67;
+  &:first-child {
+    border: $borderColor;
+  }
 }
 
 input {
   display: block;
   outline: none;
   border: none;
-  border: 2px solid #003e67;
+  border: $borderColor;
   height: 30px;
   width: 100%;
-  border: 2px solid #003e67;
+  border: $borderColor;
   padding: 0.2rem 0.6rem;
 }
 
+// Margin & Padding
 .mt-1 {
   margin-top: 0.5rem;
 }
@@ -142,6 +131,7 @@ input {
   padding-left: 1rem;
 }
 
+// Width
 .wd-1 {
   width: 100px;
 }
@@ -167,65 +157,3 @@ input {
 .spacer {
   width: 150px;
 }
-
-.photograph__placeholder {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 40vh;
-  width: 230px;
-  background: #e0f2fe;
-}
-
-.account__section .input__container {
-  display: flex;
-  align-items: center;
-}
-
-.wd-5 {
-  width: 100%;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-body,
-html {
-  height: 100%;
-  margin: 0;
-  font-size: 95%;
-  color: #003e67;
-  line-height: 1.4;
-}
-
-#container {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  padding: 10px;
-}
-
-.header {
-  flex: 1 1 auto;
-  width: 100%;
-  margin-bottom: 10px;
-  display: flex;
-  flex-direction: row;
-}
-
-.header:last-child {
-  margin-bottom: 0;
-}
-
-.labelbox {
-  flex: 0 0 15%;
-  margin-top: 0.5rem;
-}
-
-.valuebox {
-  flex: 0 0 85%;
-}
-/*# sourceMappingURL=app.css.map */

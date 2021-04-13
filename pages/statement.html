@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Statements</title>
+        <link rel="stylesheet" href="../css/app.css">
+    </head>
+
+    <body>
+        <section class="container">
+            <div class="title">
+                Statement Services
+            </div>
+            <div class="primary__color--background">
+                <div class="header">
+                    <div class="labelbox">Mode of Statement Delivery:</div>
+                    <div class="valuebox">
+                        <div class="flex--center">
+                            <div class="flex--center">
+                                <input type="text" class="input--box">
+                                <label for="email" class="ml-1">Email</label>
+                            </div>
+                            <div class="spacer"></div>
+                            <div class="flex--center ml-1">
+                                <input type="text" class="input--box">
+                                <label for="collection" class="ml-1">Collection</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="header">
+                    <div class="labelbox">
+                        Statement Frequency:
+                    </div>
+
+                    <div class="valuebox">
+                        <div class="flex--center">
+                            <span>Sent Quarterly (default)</span>
+                            <div class="flex--center ml-1">
+
+                                <div class="flex--center ml-2" style="margin-left: 73px;">
+                                    <input type="text" class="input--box">
+                                    <label for="collection" class="ml-1">On Demand</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container">
+            <div class="title">
+                Expected Account Activity
+            </div>
+
+            <div class="primary__color--background">
+                <div class="header">
+                    <div class="labelbox">
+                        Source of Funds:
+                    </div>
+
+                    <div class="valuebox">
+                        <div class="flex--between">
+                            <div class="flex--center">
+                                <input type="text" class="input--box" id="salary" name="salary" required>
+                                <label for="salary" class="ml-1">Salary</label>
+                            </div>
+                            <div class="flex--center ml-1">
+                                <input type="text" class="input--box" id="proceeds" name="proceeds" required>
+                                <label for="proceeds" class="ml-1">Proceeds from Business</label>
+                            </div>
+                            <div class="flex--center ml-1">
+                                <input type="text" class="input--box" id="gifts" name="gifts" required>
+                                <label for="gifts" class="ml-1">Inheritance/Gifts</label>
+                            </div>
+                            <div class="flex--center ml-1">
+                                <input type="text" class="input--box" id="personalSavings" name="personalSavings"
+                                    required>
+                                <label for="personalSavings" class="ml-1">Personal Savings</label>
+                            </div>
+                            <div class="flex--center ml-1">
+                                <input type="text" class="input--box" id="others" name="others" required>
+                                <label for="others" class="ml-1">Others</label>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Type of ID -->
+                <div class="header">
+                    <div class="labelbox">
+                        If Other, please specify:
+                    </div>
+
+                    <div class="valuebox">
+                        <div class="flex--between">
+                            <input type="text" style="width: 70%;">
+                            <div class="flex--center full-width">
+                                <label for="idNumber" class="ml-2" style="width: 50%;">Initial Investment
+                                    Amount:</label>
+                                <div class="flex--center">
+                                    <input type="text" class="input--box">
+                                    <input type="text" class="input--box">
+                                    <input type="text" class="input--box">
+                                    <input type="text" class="input--box">
+                                    <input type="text" class="input--box">
+                                    <input type="text" class="input--box">
+                                    <input type="text" class="input--box">
+                                    <input type="text" class="input--box">
+                                    <input type="text" class="input--box">
+                                    <input type="text" class="input--box">
+                                    <input type="text" class="input--box">
+                                    <input type="text" class="input--box">
+                                    <input type="text" class="input--box">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <em>Anticipated Investment Activity</em>
+
+                <!-- Top ups -->
+                <div class="header">
+                    <div class="labelbox">Top-ups:</div>
+                    <div class="valuebox">
+                        <div class="flex--between">
+                            <div class="flex--center">
+                                <input type="text" class="input--box" id="monthly" name="monthly">
+                                <label for="monthly" class="ml-1">Monthly</label>
+                            </div>
+                            <div class="flex--center">
+                                <input type="text" class="input--box" id="quarterly" name="quarterly">
+                                <label for="quarterly" class="ml-1">Quarterly</label>
+                            </div>
+                            <div class="flex--center">
+                                <input type="text" class="input--box" id="biAnnually" name="biAnnually">
+                                <label for="biAnnually" class="ml-1">Bi-Annually</label>
+                            </div>
+                            <div class="flex--center">
+                                <input type="text" class="input--box" id="monthly" name="monthly">
+                                <label for="monthly" class="ml-1">Monthly</label>
+                            </div>
+                            <div class="flex--center">
+                                <input type="text" class="input--box" id="annually" name="annually">
+                                <label for="annually" class="ml-1">Annually</label>
+                            </div>
+
+                            <div class="flex--center">
+                                <input type="text" id="others" name="others">
+                                <label for="others" class="ml-1">Others</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Withdrawals -->
+                <div class="header">
+                    <div class="labelbox">Withdrawals:</div>
+                    <div class="valuebox">
+                        <div class="flex--between">
+                            <div class="flex--center">
+                                <input type="text" class="input--box" id="monthly" name="monthly">
+                                <label for="monthly" class="ml-1">Monthly</label>
+                            </div>
+                            <div class="flex--center">
+                                <input type="text" class="input--box" id="quarterly" name="quarterly">
+                                <label for="quarterly" class="ml-1">Quarterly</label>
+                            </div>
+                            <div class="flex--center">
+                                <input type="text" class="input--box" id="biAnnually" name="biAnnually">
+                                <label for="biAnnually" class="ml-1">Bi-Annually</label>
+                            </div>
+                            <div class="flex--center">
+                                <input type="text" class="input--box" id="monthly" name="monthly">
+                                <label for="monthly" class="ml-1">Monthly</label>
+                            </div>
+                            <div class="flex--center">
+                                <input type="text" class="input--box" id="annually" name="annually">
+                                <label for="annually" class="ml-1">Annually</label>
+                            </div>
+
+                            <div class="flex--center">
+                                <input type="text" id="others" name="others">
+                                <label for="others" class="ml-1">Others</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="header">
+                    <div class="labelbox">
+                        Anticipated Investment Amount:
+                    </div>
+                    <div class="valuebox">
+                        <div class="flex--between">
+                            <div class="flex--center">
+                                <label for="">Regular Top-up Amount (Expected):</label>
+                                <input type="text" id="amount" name="amount">
+                            </div>
+
+                            <div class="flex--center">
+                                <label for="">Regular Withdrawal Amount(Expected):</label>
+                                <input type="text" id="amount" name="amount">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="container">
+            <div class="title">Mandate to Operate Account</div>
+            <div class="primary__color--background">
+                <div class="header">
+                    <div class="lablebox">
+                        Account Holder(s) Authorization/ Signature(s):
+                    </div>
+
+                    <div class="valuebox">
+                        <div class="flex--center">
+                            <div class="flex--center">
+                                <input type="text" class="input--box" id="salary" name="salary" required>
+                                <label for="salary" class="ml-1">One to Sign</label>
+                            </div>
+                            <div class="flex--center ml-1 wd-2">
+                                <input type="text" class="input--box" id="proceeds" name="proceeds" required>
+                                <label for="proceeds" class="ml-1">Two to Sign</label>
+                            </div>
+                            <div class="flex--center ml-1 wd-2">
+                                <input type="text" class="input--box" id="gifts" name="gifts" required>
+                                <label for="gifts" class="ml-1">Three to Sign</label>
+                            </div>
+                            <div class="flex--center ml-1">
+                                <input type="text" class="input--box" id="personalSavings" name="personalSavings"
+                                    required>
+                                <label for="personalSavings" class="ml-1">Four to Sign</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="header">
+                    <div class="labelbox">Name of Signatory 1:</div>
+                    <div class="valuebox">
+                        <div class="flex--center full-width">
+                            <input type="text" id="nameOfSignatory" name="nameOfSignatory" required style="width: 80%;">
+                            <div class="flex--center ml-1 full-width">
+                                <label for="name" class="ml-1">Name of Signatory 2:</label>
+                                <input type="text" id="nameOfSignatory" name="nameOfSignatory" required
+                                    style="width: 100%;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="header">
+                    <div class="labelbox">
+                        Signature:
+                    </div>
+
+                    <div class="valuebox">
+                        <div class="flex--between">
+                            <div class="flex--center">
+                                <span>........................................</span>
+                                <div class="flex--center full-width ml-1">
+                                    <input type="text" class="input--box" placeholder="D">
+                                    <input type="text" class="input--box" placeholder="D">
+                                    <input type="text" class="input--box" placeholder="M">
+                                    <input type="text" class="input--box" placeholder="M">
+                                    <input type="text" class="input--box" placeholder="Y">
+                                    <input type="text" class="input--box" placeholder="Y">
+                                    <input type="text" class="input--box" placeholder="Y">
+                                    <input type="text" class="input--box" placeholder="Y">
+                                </div>
+                            </div>
+
+
+                            <div class="flex--center ml-1">
+                                <span>Signature:</span>
+                                <span>........................................</span>
+                                <div class="flex--center full-width ml-1">
+                                    <input type="text" class="input--box" placeholder="D">
+                                    <input type="text" class="input--box" placeholder="D">
+                                    <input type="text" class="input--box" placeholder="M">
+                                    <input type="text" class="input--box" placeholder="M">
+                                    <input type="text" class="input--box" placeholder="Y">
+                                    <input type="text" class="input--box" placeholder="Y">
+                                    <input type="text" class="input--box" placeholder="Y">
+                                    <input type="text" class="input--box" placeholder="Y">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="header">
+                    <div class="labelbox">Name of Signatory 3:</div>
+                    <div class="valuebox">
+                        <div class="flex--center full-width">
+                            <input type="text" id="nameOfSignatory" name="nameOfSignatory" required style="width: 80%;">
+                            <div class="flex--center ml-1 full-width">
+                                <label for="name" class="ml-1">Name of Signatory 4:</label>
+                                <input type="text" id="nameOfSignatory" name="nameOfSignatory" required
+                                    style="width: 100%;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="header">
+                    <div class="labelbox">
+                        Signature:
+                    </div>
+
+                    <div class="valuebox">
+                        <div class="flex--between">
+                            <div class="flex--center">
+                                <span>........................................</span>
+                                <div class="flex--center full-width ml-1">
+                                    <input type="text" class="input--box" placeholder="D">
+                                    <input type="text" class="input--box" placeholder="D">
+                                    <input type="text" class="input--box" placeholder="M">
+                                    <input type="text" class="input--box" placeholder="M">
+                                    <input type="text" class="input--box" placeholder="Y">
+                                    <input type="text" class="input--box" placeholder="Y">
+                                    <input type="text" class="input--box" placeholder="Y">
+                                    <input type="text" class="input--box" placeholder="Y">
+                                </div>
+                            </div>
+
+
+                            <div class="flex--center ml-1">
+                                <span>Signature:</span>
+                                <span>........................................</span>
+                                <div class="flex--center full-width ml-1">
+                                    <input type="text" class="input--box" placeholder="D">
+                                    <input type="text" class="input--box" placeholder="D">
+                                    <input type="text" class="input--box" placeholder="M">
+                                    <input type="text" class="input--box" placeholder="M">
+                                    <input type="text" class="input--box" placeholder="Y">
+                                    <input type="text" class="input--box" placeholder="Y">
+                                    <input type="text" class="input--box" placeholder="Y">
+                                    <input type="text" class="input--box" placeholder="Y">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container">
+            <div class="title">Approvals</div>
+            <div class="primary__color--background">
+
+
+                <div class="header">
+                    <div class="labelbox">
+                        Relationship Manager:
+                    </div>
+                    <div class="valuebox">
+                        <div class="flex--between">
+                            <input type="text" id="relationshipManager" name="relationshipManager">
+                            <div class="flex--center ml-1">
+                                <div class="flex--center">
+                                    <label for="">Signature:</label>
+                                    <span class="ml-1">........................................</span>
+                                    <span class="ml-1">Date:</span>
+                                </div>
+                                <div class="flex--center full-width ml-1">
+                                    <input type="text" class="input--box" placeholder="D">
+                                    <input type="text" class="input--box" placeholder="D">
+                                    <input type="text" class="input--box" placeholder="M">
+                                    <input type="text" class="input--box" placeholder="M">
+                                    <input type="text" class="input--box" placeholder="Y">
+                                    <input type="text" class="input--box" placeholder="Y">
+                                    <input type="text" class="input--box" placeholder="Y">
+                                    <input type="text" class="input--box" placeholder="Y">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Processed By -->
+                <div class="header">
+                    <div class="labelbox">
+                        Processed by:
+                    </div>
+                    <div class="valuebox">
+                        <div class="flex--between">
+                            <input type="text" id="relationshipManager" name="relationshipManager">
+                            <div class="flex--center ml-1">
+                                <div class="flex--center">
+                                    <label for="">Signature:</label>
+                                    <span class="ml-1">........................................</span>
+                                    <span class="ml-1">Date:</span>
+                                </div>
+                                <div class="flex--center full-width ml-1">
+                                    <input type="text" class="input--box" placeholder="D">
+                                    <input type="text" class="input--box" placeholder="D">
+                                    <input type="text" class="input--box" placeholder="M">
+                                    <input type="text" class="input--box" placeholder="M">
+                                    <input type="text" class="input--box" placeholder="Y">
+                                    <input type="text" class="input--box" placeholder="Y">
+                                    <input type="text" class="input--box" placeholder="Y">
+                                    <input type="text" class="input--box" placeholder="Y">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Position -->
+                <div class="header">
+                    <div class="labelbox">
+                        Position:
+                    </div>
+                    <div class="valuebox">
+                        <div class="flex--between">
+                            <input type="text" id="position" name="position" style="width: 41.7%;">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Reviewed & Approved By -->
+
+                <div class="header">
+                    <div class="labelbox">
+                        Reviewed and Approved by:
+                    </div>
+                    <div class="valuebox">
+                        <div class="flex--between">
+                            <input type="text" id="review" name="review">
+                            <div class="flex--center ml-1">
+                                <div class="flex--center">
+                                    <label for="">Signature:</label>
+                                    <span class="ml-1">........................................</span>
+                                    <span class="ml-1">Date:</span>
+                                </div>
+                                <div class="flex--center full-width ml-1">
+                                    <input type="text" class="input--box" placeholder="D">
+                                    <input type="text" class="input--box" placeholder="D">
+                                    <input type="text" class="input--box" placeholder="M">
+                                    <input type="text" class="input--box" placeholder="M">
+                                    <input type="text" class="input--box" placeholder="Y">
+                                    <input type="text" class="input--box" placeholder="Y">
+                                    <input type="text" class="input--box" placeholder="Y">
+                                    <input type="text" class="input--box" placeholder="Y">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Position -->
+                <div class="header">
+                    <div class="labelbox">
+                        Position:
+                    </div>
+                    <div class="valuebox">
+                        <div class="flex--between">
+                            <input type="text" id="position" name="position" style="width: 41.7%;">
+                        </div>
+                    </div>
+                </div>
+                <em>High Risk Account Authorized / Approved by Executive / CEO</em>
+
+                <!-- Name & SIgnature -->
+                <div class="header">
+                    <div class="labelbox">
+                        Name:
+                    </div>
+                    <div class="valuebox">
+                        <div class="flex--between">
+                            <input type="text" id="relationshipManager" name="relationshipManager">
+                            <div class="flex--center ml-1">
+                                <div class="flex--center">
+                                    <label for="">Signature:</label>
+                                    <span class="ml-1">........................................</span>
+                                    <span class="ml-1">Date:</span>
+                                </div>
+                                <div class="flex--center full-width ml-1">
+                                    <input type="text" class="input--box" placeholder="D">
+                                    <input type="text" class="input--box" placeholder="D">
+                                    <input type="text" class="input--box" placeholder="M">
+                                    <input type="text" class="input--box" placeholder="M">
+                                    <input type="text" class="input--box" placeholder="Y">
+                                    <input type="text" class="input--box" placeholder="Y">
+                                    <input type="text" class="input--box" placeholder="Y">
+                                    <input type="text" class="input--box" placeholder="Y">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Comments -->
+                <!-- Processed By -->
+                <div class="header">
+                    <div class="labelbox">
+                        Comments:
+                    </div>
+                    <div class="valuebox">
+                        <div class="flex--between">
+                            <input type="text" id="comments" name="comments">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container">
+            <div class="title">For Official Use Only</div>
+            <div class="primary__color--background font--small">
+                <em>Do you, your spouse, or any other immediate family member, including parents, in-laws, siblings and
+                    dependants fall under the following:</em>
+                <div class="flex--between font--small">
+                    <span>A head of state/government, politician, senior public official,
+                        senior
+                        military official,
+                        senior public corporation officer, high rank political party official in Ghana</span>
+                    <div class="flex--center">
+                        <div class="flex--center">
+                            <input type="text" class="input--box ml-1" id="yes" name="yes">
+                            <label for="yes" class="ml-1">Yes</label>
+                        </div>
+                        <div class="flex--center ml-1">
+                            <input type="text" class="input--box" id="no" name="no">
+                            <label for="no" class="ml-1">No</label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Second Paragraph -->
+                <div class="flex--center font--small">
+                    <span>
+                        If yes to any above, please specify name (if not the applicant) and nature of the
+                        position:</span>
+
+                    <input type="text">
+                </div>
+
+                <!-- Third Paragraph -->
+                <div class="flex--between font--small">
+                    <span>A head of state/government, politician, senior public official,
+                        senior
+                        military official,
+                        senior public corporation officer, high rank political party official in Ghana</span>
+                    <div class="flex--center">
+                        <div class="flex--center">
+                            <input type="text" class="input--box ml-1" id="yes" name="yes">
+                            <label for="yes" class="ml-1">Yes</label>
+                        </div>
+                        <div class="flex--center ml-1">
+                            <input type="text" class="input--box" id="no" name="no">
+                            <label for="no" class="ml-1">No</label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fourth Paragraph -->
+                <div class="flex--center font--small">
+                    <span>
+                        If yes to any above, please specify name (if not the applicant) and nature of the
+                        position:</span>
+
+                    <input type="text">
+                </div>
+
+            </div>
+
+            <div class="primary__color--background mt-1 font--small">
+                <!-- 1 -->
+                <div class="flex--center">
+                    <span>Are you a citizen of any foreign country (besides Ghana)?</span>
+                    <div class="spacer" style="width: 162px;"></div>
+                    <div class="flex--center">
+                        <div class="flex--center ml-1">
+                            <input type="text" class="input--box">
+                            <label for="yes" class="ml-1">Yes</label>
+                        </div>
+
+                        <div class="flex--center ml-1">
+                            <input type="text" class="input--box">
+                            <label for="no" class="ml-1">No</label>
+                        </div>
+                    </div>
+                </div>
+                <!-- 2 -->
+                <div class="flex--center">
+                    <span>Do you hold passport of any foreign country (besides Ghana)?</span>
+                    <div class="spacer" style="width: 134px;"></div>
+                    <div class="flex--center ml-1">
+                        <input type="text" class="input--box">
+                        <label for="yes" class="ml-1">Yes</label>
+                    </div>
+
+                    <div class="flex--center ml-1">
+                        <input type="text" class="input--box mt-1">
+                        <label for="no" class="ml-1">No</label>
+                    </div>
+                </div>
+                <!-- 3 -->
+                <div class="flex--center">
+                    <span>Do you hold green card of any foreign country (besides Ghana)?</span>
+                    <div class="spacer" style="width: 124px;"></div>
+                    <div class="flex--center ml-1">
+                        <input type="text" class="input--box mt-1">
+                        <label for="yes" class="ml-1">Yes</label>
+                    </div>
+
+                    <div class="flex--center ml-1">
+                        <input type="text" class="input--box mt-1">
+                        <label for="no" class="ml-1">No</label>
+                    </div>
+                </div>
+                <!-- 4 -->
+                <div class="flex--center">
+                    <span>Are you resident in any foreign country?</span>
+                    <div class="spacer" style="width: 263px;"></div>
+                    <div class="flex--center ml-1">
+                        <input type="text" class="input--box mt-1">
+                        <label for="yes" class="ml-1">Yes</label>
+                    </div>
+
+                    <div class="flex--center ml-1">
+                        <input type="text" class="input--box mt-1">
+                        <label for="no" class="ml-1">No</label>
+                    </div>
+                </div>
+                <!-- 5 -->
+                <div class="flex--center">
+                    <span>Have you spent more than 183 days in any foreign country?</span>
+                    <div class="spacer"></div>
+                    <div class="flex--center ml-1">
+                        <input type="text" class="input--box mt-1">
+                        <label for="yes" class="ml-1">Yes</label>
+                    </div>
+
+                    <div class="flex--center ml-1">
+                        <input type="text" class="input--box mt-1">
+                        <label for="no" class="ml-1">No</label>
+                    </div>
+                </div>
+                <em class="mt-1">If the responses to any of the above questions is Yes, please provide the following
+                    information:</em>
+
+                <div class="header">
+                    <div class="labelbox">
+                        Full Name:
+                    </div>
+
+                    <div class="valuebox">
+                        <input type="text" id="fullName" name="fullName">
+                    </div>
+                </div>
+
+                <div class="header">
+                    <div class="labelbox">
+                        Foreign Residential Address:
+                    </div>
+
+                    <div class="valuebox">
+                        <input type="text" id="foreignResidentialAddress" name="foreignResidentialAddress">
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="container">
+            <div class="title">Email Idemnity</div>
+            <div class="primary__color--background">
+                <div>
+                    <p>We / I</p>
+                    <input type="text">
+                </div>
+
+                <div class="mt-1">
+                    Of
+                    <input type="text">
+                </div>
+
+                <div>
+                    <p class="mb-1">
+                        Authorize InvestCorp Asset Management LTD. InvestCorp of #15 Wawa Drive, North Dzorwulu, P.O.
+                        Box GP 22493 Accra to deal with our / my investment portfolio at InvestCorp and carry out all
+                        investment instructions given by us / me through email via the following e-mail address only:
+                    </p>
+                    <input type="text">
+                </div>
+
+                <div>
+                    <p> That we / I shall call you on telephone and confirm our / my instruction to you within thirty
+                        (30)
+                        minutes of giving investment instruction to you through the above stated e-mail address;</p>
+                </div>
+
+                <div>
+                    <p>
+                        We / I authorize you after receiving our / my confirmation to deal with our / my investment
+                        account
+                        and execute all instructions given to you by us / me through our / my said email address above;
+                    </p>
+                </div>
+
+                <div>
+                    <p>That in dealing with our / my investment portfolio and carrying out all investment instructions
+                        given to you through above stated email address;</p>
+                </div>
+                <div>
+                    <p>WE / I UNDERTAKE to completely indemnify and hold harmless and absolve you InvestCorp, from all
+                        forms of loss, liability, claim or damage that might be incurred by you or made against you and
+                        / or us / me as a result of authorizing you through email.</p>
+                </div>
+
+                <div>
+                    <p>We / I shall at our / my own expense defend any action or claim that any third party or person
+                        may bring against you in the event that you rely on our / my instruction and there is any loss.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="container">
+            <div class="title">Declaration</div>
+            <div class="primary__color--background">
+                <div>
+                    <span>We / I,</span>
+                    <input type="text">
+                </div>
+
+                <div>
+                    <p>hereby declare that all the information submitted by us / me in this form is correct, true and
+                        valid, that by our / my request, to open and maintain securities account(s) in our / my name and
+                        undertake to notify InvestCorp of any changes to our / my particulars or information as may be
+                        necessary.</p>
+                </div>
+
+                <div>
+                    <p>We / I also declare that we have read thoroughly and understood the contents of this application
+                        and have given our / my consent by virtue of our / my signature(s) on this form. We / I consent
+                        that investment decisions are our / my prerogative without sole reliance on the investment
+                        advice received from InvestCorp. InvestCorp accepts no liability for any direct or consequential
+                        loss arising from my/our decision.</p>
+                </div>
+                <div>
+                    <p>We / I also declare that all debits incurred on our / my securities account(s) by virtue of our /
+                        my trade orders shall be settled by us / me accordingly.</p>
+                </div>
+
+                <div class="header mt-2">
+                    <div class="labelbox">
+                        Name:
+                    </div>
+                    <div class="valuebox">
+                        <div class="flex--between">
+                            <input type="text" id="name" name="name">
+                            <div class="flex--center ml-1">
+                                <div class="flex--center">
+                                    <label for="">Signature:</label>
+                                    <span class="ml-1">........................................</span>
+                                    <span class="ml-1">Date:</span>
+                                </div>
+                                <div class="flex--center full-width ml-1">
+                                    <input type="text" class="input--box" placeholder="D">
+                                    <input type="text" class="input--box" placeholder="D">
+                                    <input type="text" class="input--box" placeholder="M">
+                                    <input type="text" class="input--box" placeholder="M">
+                                    <input type="text" class="input--box" placeholder="Y">
+                                    <input type="text" class="input--box" placeholder="Y">
+                                    <input type="text" class="input--box" placeholder="Y">
+                                    <input type="text" class="input--box" placeholder="Y">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container">
+            <div class="title">Mobile Money</div>
+            <div class="primary__color--background">
+                <div class="header">
+                    <div class="labelbox">
+                        Mobile Money Number:
+                    </div>
+
+                    <div class="valuebox">
+                        <div class="flex--center">
+                            <input type="text" class="input--box">
+                            <input type="text" class="input--box">
+                            <input type="text" class="input--box">
+                            <input type="text" class="input--box">
+                            <input type="text" class="input--box">
+                            <input type="text" class="input--box">
+                            <input type="text" class="input--box">
+                            <input type="text" class="input--box">
+                            <input type="text" class="input--box">
+                            <input type="text" class="input--box">
+                            <input type="text" class="input--box">
+                            <input type="text" class="input--box">
+                            <input type="text" class="input--box">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container">
+            <div class="title">Customer Risk Analysis</div>
+            <div class="primary__color--background">
+                <div>
+                    <p>Determining the time frame for your investment is critical to making an investment decision, the
+                        longer your investment horizon, the more aggressive you may want to be.</p>
+                </div>
+
+                
+            </div>
+        </section>
+    </body>
+
+</html>
