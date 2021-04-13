@@ -5,9 +5,9 @@
   margin: 10px auto;
 }
 
-.footer {
-  background: $blue400;
-  padding: 1rem;
+.primary__color--background {
+  padding: $bodyPadding;
+  background-color: $blue100;
 }
 
 .title {
@@ -18,6 +18,7 @@
   margin-top: -9px;
   text-transform: uppercase;
 }
+
 .sub--title {
   text-transform: uppercase;
 }
@@ -29,9 +30,13 @@
 .font--small {
   font-size: 13px;
 }
-.primary__color--background {
-  padding: $bodyPadding;
-  background-color: $blue100;
+
+.footer {
+  color: $textColorWhite;
+  background-color: $blue400;
+  padding: 0.4rem;
+  width: 100%;
+  margin-top: -9px;
 }
 
 // Flex-box
@@ -77,8 +82,8 @@
 // Boxes
 .box {
   display: block;
-  height: 35px;
-  width: 35px;
+  height: 30px;
+  width: 30px;
   border: $borderColor;
   border-left: none;
   background: #fff;
