@@ -5,16 +5,24 @@
   box-sizing: border-box;
 }
 
-body {
-  padding: 0;
-  margin: 0;
+body,
+html {
   font-family: 'Roboto', sans-serif;
-  font-size: 100%;
+  height: 100%;
+  margin: 0;
+  font-size: 95%;
+  color: #003e67;
+  line-height: 1.4;
 }
 
 .container {
   max-width: 1100px;
   margin: 10px auto;
+}
+
+.primary__color--background {
+  padding: 1rem;
+  background-color: #e3f3fb;
 }
 
 .title {
@@ -38,9 +46,12 @@ body {
   font-size: 13px;
 }
 
-.primary__color--background {
-  padding: 1rem;
-  background-color: #e3f3fb;
+.footer {
+  color: #fff;
+  background-color: #003e67;
+  padding: 0.4rem;
+  width: 100%;
+  margin-top: -9px;
 }
 
 .flex {
@@ -84,8 +95,8 @@ body {
 
 .box {
   display: block;
-  height: 35px;
-  width: 35px;
+  height: 30px;
+  width: 30px;
   border: 2px solid #003e67;
   border-left: none;
   background: #fff;
@@ -168,6 +179,10 @@ input {
   width: 150px;
 }
 
+.pd {
+  padding: 10rem;
+}
+
 .photograph__placeholder {
   display: flex;
   justify-content: center;
@@ -184,28 +199,6 @@ input {
 
 .wd-5 {
   width: 100%;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-body,
-html {
-  height: 100%;
-  margin: 0;
-  font-size: 95%;
-  color: #003e67;
-  line-height: 1.4;
-}
-
-#container {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  padding: 10px;
 }
 
 .header {
@@ -227,5 +220,61 @@ html {
 
 .valuebox {
   flex: 0 0 85%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 10px;
+}
+
+.checkbox {
+  display: inline-flex;
+  cursor: pointer;
+  position: relative;
+}
+
+.checkbox > span {
+  color: #003e67;
+  padding: 0.5rem 0.25rem;
+}
+
+.checkbox > input {
+  height: 30px;
+  width: 30px;
+  -o-appearance: none;
+  appearance: none;
+  border: 2px solid #003e67;
+  outline: none;
+  transition-duration: 0.3s;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.checkbox > input:checked {
+  border: 2px solid #003e67;
+  background-color: #003e67;
+}
+
+.checkbox > input:checked + span::before,
+.checkbox > input:checked + span::after {
+  content: '\2713';
+  display: block;
+  text-align: center;
+  color: #fff;
+  position: absolute;
+  left: 0.7rem;
+  top: 0.6rem;
+}
+
+.checkbox > input:active {
+  border: 2px solid #003e67;
 }
 /*# sourceMappingURL=app.css.map */

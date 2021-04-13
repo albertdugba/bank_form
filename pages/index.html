@@ -16,24 +16,14 @@
                 <div class="account__section">
                     <span>Account Number</span>
                     <div class="input__container">
-                        <input class="input--box">
-                        <input class="input--box">
-                        <input class="input--box">
-                        <input class="input--box">
-                        <input class="input--box">
-                        <input class="input--box">
-                        <input class="input--box">
-                        <input class="input--box">
-                        <input class="input--box">
-                        <input class="input--box">
-                        <input class="input--box">
-                        <input class="input--box">
-                        <input class="input--box">
+                        <input type="number" id="accoutNumber" name="accoutNumber" required>
+
                     </div>
-                    <div class="flex--center mt-1">
-                        <input class="input--box">
+
+                    <label class="checkbox flex">
+                        <input type="checkbox" />
                         <span class="ml-1">ITF (In Trust For) minors (children under 18 years)</span>
-                    </div>
+                    </label>
 
                     <div class="flex--center">
                         <label for="name">Name(s):</label>
@@ -56,54 +46,58 @@
                 <div class="title">CATEGORY OF INVESTMENT</div>
                 <!-- Group 1 -->
                 <div class="primary__color--background flex--between">
-                    <div>
-                        <div class="flex--center">
-                            <input class="input--box">
-                            <span class="ml-1">INDIVIDUAL ACCOUNT</span>
-                        </div>
-                        <div class="flex--center mt-1">
-                            <input class="input--box">
-                            <span class="ml-1">InvestCorp Treasury Securities Fund</span>
-                        </div>
-                        <div class="flex--center mt-1">
-                            <input class="input--box">
-                            <span class="ml-1">InvestCorp Money Market Fund</span>
-                        </div>
+                    <div class="flex--column">
+
+                        <label class="checkbox flex">
+                            <input type="checkbox" />
+                            <span>INDIVIDUAL ACCOUNT</span>
+                        </label>
+
+                        <label class="checkbox flex">
+                            <input type="checkbox">
+                            <span>InvestCorp Treasury Securities Fund</span>
+                        </label>
+                        <label class="checkbox flex">
+                            <input type="checkbox" class="input--box">
+                            <span>InvestCorp Money Market Fund</span>
+                        </label>
                     </div>
 
                     <!-- Group 2 -->
-                    <div>
-                        <div class="flex--center mt-1">
-                            <input class="input--box">
-                            <span class="ml-1">JOINT ACCOUNT</span>
-                        </div>
-                        <div class="flex--center mt-1">
-                            <input class="input--box">
-                            <span class="ml-1">InvestCorp Mid-Tier Fund</span>
-                        </div>
-                        <div class="flex--center mt-1">
-                            <input class="input--box">
-                            <span class="ml-1">InvestCorp Active Equity Fund</span>
-                        </div>
+                    <div class="flex--column">
+                        <label class="checkbox flex">
+                            <input type="checkbox">
+                            <span>JOINT ACCOUNT</span>
+                        </label>
+                        <label class="checkbox flex">
+                            <input type="checkbox">
+                            <span>InvestCorp Mid-Tier Fund</span>
+                        </label>
+                        <label class="checkbox flex">
+                            <input type="checkbox">
+                            <span>InvestCorp Active Equity Fund</span>
+                        </label>
                     </div>
 
                     <!-- Group 3 -->
-                    <div>
-                        <div class="flex--center mt-1">
-                            <input class="input--box">
-                            <span class="ml-1">ITF ACCOUNT</span>
-                        </div>
-                        <div class="flex--center mt-1">
-                            <input class="input--box">
-                            <span class="ml-1">InvestCorp Private Wealth Suite</span>
-                        </div>
-                        <div class="flex--center mt-1">
-                            <input class="input--box">
+                    <div class="flex--column">
+                        <label class="checkbox flex">
+                            <input type="checkbox">
+                            <span>ITF ACCOUNT</span>
+                        </label>
+
+                        <label class="checkbox flex">
+                            <input type="checkbox">
+                            <span>InvestCorp Private Wealth Suite</span>
+                        </label>
+
+                        <label class="checkbox flex">
+                            <input type="checkbox">
                             <div class="flex--between">
                                 <span class="ml-1 mt-1">OTHER (PLEASE SPECIFY)</span>
                                 <input type="text" class="ml-1">
                             </div>
-                        </div>
+                        </label>
                     </div>
                 </div>
 

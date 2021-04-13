@@ -16,3 +16,49 @@
   align-items: flex-start;
   padding: 10px;
 }
+
+// Input checkbox
+.checkbox {
+  display: inline-flex;
+  cursor: pointer;
+  position: relative;
+}
+
+.checkbox > span {
+  color: $blue400;
+  padding: 0.5rem 0.25rem;
+}
+
+.checkbox > input {
+  height: 30px;
+  width: 30px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  border: $borderColor;
+  outline: none;
+  transition-duration: 0.3s;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.checkbox > input:checked {
+  border: $borderColor;
+  background-color: $blue400;
+}
+
+.checkbox > input:checked + span::before,
+.checkbox > input:checked + span::after {
+  content: '\2713';
+  display: block;
+  text-align: center;
+  color: #fff;
+  position: absolute;
+  left: 0.7rem;
+  top: 0.6rem;
+}
+
+.checkbox > input:active {
+  border: $borderColor;
+}
